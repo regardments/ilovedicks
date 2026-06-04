@@ -1,0 +1,13 @@
+{
+  "patch_id": "6ef672df-e88a-4e9f-a463-995415b8ab82",
+  "timestamp": "2025-12-14T15:16:13.521204",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://112050896536834": {
+        "status": "removed",
+        "name": "ENMITYFLYINGSLAM"
+      }
+    }
+  }
+}

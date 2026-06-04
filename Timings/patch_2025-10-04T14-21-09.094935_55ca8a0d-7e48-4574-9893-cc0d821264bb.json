@@ -1,0 +1,121 @@
+{
+  "patch_id": "55ca8a0d-7e48-4574-9893-cc0d821264bb",
+  "timestamp": "2025-10-04T14:21:09.094935",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://126513657913280": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": false,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "N/A",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": true,
+          "ha": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 31,
+                "X": 10,
+                "Z": 20
+              },
+              "when": 500,
+              "ihbc": false
+            }
+          ],
+          "pfh": true,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://126513657913280",
+          "mat": 600,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "RosenJumpCrit",
+          "imxd": 107,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://11363599835": {
+        "status": "modified",
+        "changes": {
+          "fhb": {
+            "from": false,
+            "to": true
+          },
+          "iae": {
+            "from": true,
+            "to": false
+          }
+        }
+      },
+      "rbxassetid://128929685763553": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 11,
+              "X": 12,
+              "Z": 16
+            },
+            "to": {
+              "Y": 31,
+              "X": 12,
+              "Z": 16
+            }
+          }
+        }
+      }
+    },
+    "part": {
+      "HumanoidRootPart": {
+        "status": "added",
+        "data": {
+          "umoa": true,
+          "pname": "HumanoidRootPart",
+          "smod": "ShadowPuppet",
+          "hso": 0,
+          "actions": [],
+          "ndfb": false,
+          "after": 0,
+          "uhc": false,
+          "duih": false,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "ShadowPuppet",
+          "imxd": 140,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

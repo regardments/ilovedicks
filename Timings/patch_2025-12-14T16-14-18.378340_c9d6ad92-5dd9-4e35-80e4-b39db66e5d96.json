@@ -1,0 +1,147 @@
+{
+  "patch_id": "c9d6ad92-5dd9-4e35-80e4-b39db66e5d96",
+  "timestamp": "2025-12-14T16:14:18.378340",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://6063195211": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.2500000298023224,
+            "to": 0.25
+          },
+          "phds": {
+            "from": 0.2500000298023224,
+            "to": 0.25
+          }
+        }
+      },
+      "rbxassetid://76782656543761": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 21,
+                  "X": 32,
+                  "Z": 36
+                },
+                "when": 525,
+                "ihbc": false
+              },
+              {
+                "_type": "Parry",
+                "name": "4",
+                "hitbox": {
+                  "Y": 21,
+                  "X": 32,
+                  "Z": 36
+                },
+                "when": 2650,
+                "ihbc": false
+              },
+              {
+                "_type": "Parry",
+                "name": "3",
+                "hitbox": {
+                  "Y": 21,
+                  "X": 32,
+                  "Z": 36
+                },
+                "when": 2275,
+                "ihbc": false
+              },
+              {
+                "_type": "Dodge",
+                "name": "2",
+                "hitbox": {
+                  "Y": 21,
+                  "X": 32,
+                  "Z": 36
+                },
+                "when": 1425,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 21,
+                  "X": 32,
+                  "Z": 36
+                },
+                "when": 525,
+                "ihbc": false
+              },
+              {
+                "_type": "Parry",
+                "name": "4",
+                "hitbox": {
+                  "Y": 21,
+                  "X": 32,
+                  "Z": 36
+                },
+                "when": 2650,
+                "ihbc": false
+              },
+              {
+                "_type": "Parry",
+                "name": "3",
+                "hitbox": {
+                  "Y": 21,
+                  "X": 32,
+                  "Z": 36
+                },
+                "when": 2275,
+                "ihbc": false
+              },
+              {
+                "_type": "Dodge",
+                "name": "2",
+                "hitbox": {
+                  "Y": 21,
+                  "X": 32,
+                  "Z": 36
+                },
+                "when": 1375,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "rbxassetid://7616407967": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.2500000298023224,
+            "to": 0.25
+          },
+          "phds": {
+            "from": 0.2500000298023224,
+            "to": 0.25
+          }
+        }
+      },
+      "rbxassetid://6063188218": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.2500000298023224,
+            "to": 0.25
+          },
+          "phds": {
+            "from": 0.2500000298023224,
+            "to": 0.25
+          }
+        }
+      }
+    }
+  }
+}

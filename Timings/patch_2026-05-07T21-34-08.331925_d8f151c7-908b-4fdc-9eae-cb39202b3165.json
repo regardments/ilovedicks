@@ -1,0 +1,102 @@
+{
+  "patch_id": "d8f151c7-908b-4fdc-9eae-cb39202b3165",
+  "timestamp": "2026-05-07T21:34:08.331925",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://17108126093": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.1,
+            "to": 0.15
+          },
+          "nvfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://6437665734": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.4,
+            "to": 0.5
+          },
+          "phds": {
+            "from": 1,
+            "to": 0.6
+          },
+          "phd": {
+            "from": true,
+            "to": false
+          },
+          "hso": {
+            "from": 0,
+            "to": -5
+          },
+          "nvfb": {
+            "from": false,
+            "to": true
+          },
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      },
+      "rbxassetid://9928429385": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 1,
+            "to": 0.6
+          },
+          "phd": {
+            "from": true,
+            "to": false
+          },
+          "nvfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://9930447958": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 1,
+            "to": 0.6
+          },
+          "phd": {
+            "from": true,
+            "to": false
+          },
+          "nvfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://9928485641": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 1,
+            "to": 0.6
+          },
+          "phd": {
+            "from": true,
+            "to": false
+          },
+          "nvfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

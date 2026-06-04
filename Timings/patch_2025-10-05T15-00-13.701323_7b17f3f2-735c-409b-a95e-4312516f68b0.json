@@ -1,0 +1,42 @@
+{
+  "patch_id": "7b17f3f2-735c-409b-a95e-4312516f68b0",
+  "timestamp": "2025-10-05T15:00:13.701323",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://16926301301": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Forced Full Dodge",
+                "name": "1",
+                "hitbox": {
+                  "Y": 20,
+                  "X": 20,
+                  "Z": 20
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Forced Full Dodge",
+                "name": "1",
+                "hitbox": {
+                  "Y": 20,
+                  "X": 20,
+                  "Z": 20
+                },
+                "when": 200,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

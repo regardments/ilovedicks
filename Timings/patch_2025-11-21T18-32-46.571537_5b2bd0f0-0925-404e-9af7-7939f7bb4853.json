@@ -1,0 +1,26 @@
+{
+  "patch_id": "5b2bd0f0-0925-404e-9af7-7939f7bb4853",
+  "timestamp": "2025-11-21T18:32:46.571537",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://9400896040": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 18,
+              "X": 20,
+              "Z": 16
+            },
+            "to": {
+              "Y": 18,
+              "X": 15,
+              "Z": 15
+            }
+          }
+        }
+      }
+    }
+  }
+}

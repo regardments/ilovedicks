@@ -1,0 +1,97 @@
+{
+  "patch_id": "e7549a6a-bc5a-4451-b3ef-6cdbb1c3bb14",
+  "timestamp": "2025-12-14T13:19:57.360475",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://99685895455082": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 32,
+                "X": 31,
+                "Z": 31
+              },
+              "when": 475,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "2",
+              "hitbox": {
+                "Y": 32,
+                "X": 31,
+                "Z": 31
+              },
+              "when": 1175,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "5",
+              "hitbox": {
+                "Y": 32,
+                "X": 31,
+                "Z": 31
+              },
+              "when": 2220,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "4",
+              "hitbox": {
+                "Y": 32,
+                "X": 31,
+                "Z": 31
+              },
+              "when": 3025,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://99685895455082",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "RatKingTripleFeint",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": true,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": true,
+          "imxd": 150,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "patch_id": "1861cd57-9339-4666-b2cf-774ed6c9452e",
+  "timestamp": "2025-10-22T14:21:11.972288",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://114108670383026": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0,
+            "to": 0.21
+          },
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://100190998225588": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0,
+            "to": 0.21
+          },
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://138417702895229": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0,
+            "to": 0.21
+          },
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://17666279427": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 1,
+            "to": 0.21
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://104616759679357": {
+        "status": "modified",
+        "changes": {
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          },
+          "phds": {
+            "from": 0,
+            "to": 0.21
+          }
+        }
+      },
+      "rbxassetid://117058220308511": {
+        "status": "modified",
+        "changes": {
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          },
+          "phds": {
+            "from": 0,
+            "to": 0.21
+          }
+        }
+      },
+      "rbxassetid://137978211994071": {
+        "status": "modified",
+        "changes": {
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          },
+          "phds": {
+            "from": 0,
+            "to": 0.21
+          }
+        }
+      },
+      "rbxassetid://17666284182": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 1,
+            "to": 0.21
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

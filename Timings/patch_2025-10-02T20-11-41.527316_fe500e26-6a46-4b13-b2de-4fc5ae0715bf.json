@@ -1,0 +1,58 @@
+{
+  "patch_id": "fe500e26-6a46-4b13-b2de-4fc5ae0715bf",
+  "timestamp": "2025-10-02T20:11:41.527316",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "IceBirdRed": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 6,
+                  "X": 6,
+                  "Z": 40
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 0,
+                  "X": 0,
+                  "Z": 0
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ]
+          },
+          "hitbox": {
+            "from": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            },
+            "to": {
+              "Y": 7,
+              "X": 7,
+              "Z": 20
+            }
+          },
+          "duih": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

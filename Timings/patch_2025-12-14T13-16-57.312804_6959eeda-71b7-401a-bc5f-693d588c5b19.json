@@ -1,0 +1,43 @@
+{
+  "patch_id": "6959eeda-71b7-401a-bc5f-693d588c5b19",
+  "timestamp": "2025-12-14T13:16:57.312804",
+  "author": "Juanito",
+  "diff": {
+    "sound": {
+      "rbxassetid://81227290036586": {
+        "status": "added",
+        "data": {
+          "umoa": false,
+          "rpd": 0,
+          "alp": true,
+          "smod": "N/A",
+          "hso": 0,
+          "duih": false,
+          "nbfb": false,
+          "bfht": 0.3,
+          "actions": [],
+          "ndfb": false,
+          "rsd": 0,
+          "after": 0,
+          "_id": "rbxassetid://81227290036586",
+          "nvfb": false,
+          "rpue": false,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "GoldenSnapFire",
+          "imxd": 32,
+          "smn": false,
+          "fhb": false,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "patch_id": "12cc7fa6-f419-45f9-96af-c2e7fc10110e",
+  "timestamp": "2025-11-18T17:51:29.131270",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://16372427756": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 0.2
+          },
+          "pfht": {
+            "from": 0.2500000298023224,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://16372412925": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 0.2
+          },
+          "pfht": {
+            "from": 0.2500000298023224,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://6466993564": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 19.100000381469727,
+              "X": 22.100000381469727,
+              "Z": 19.100000381469727
+            },
+            "to": {
+              "Y": 16.000001907348633,
+              "X": 16.000001907348633,
+              "Z": 16.000001907348633
+            }
+          }
+        }
+      },
+      "rbxassetid://16372422960": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 0.2
+          },
+          "pfht": {
+            "from": 0.2500000298023224,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://82342705344145": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.3,
+            "to": 0.1
+          }
+        }
+      },
+      "rbxassetid://95071929775027": {
+        "status": "modified",
+        "changes": {
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://138417702895229": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 1,
+            "to": 0.2
+          }
+        }
+      }
+    }
+  }
+}

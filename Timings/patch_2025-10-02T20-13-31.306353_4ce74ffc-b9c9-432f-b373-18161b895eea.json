@@ -1,0 +1,26 @@
+{
+  "patch_id": "4ce74ffc-b9c9-432f-b373-18161b895eea",
+  "timestamp": "2025-10-02T20:13:31.306353",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "IceBirdRed": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 7,
+              "X": 7,
+              "Z": 20
+            },
+            "to": {
+              "Y": 7,
+              "X": 7,
+              "Z": 25
+            }
+          }
+        }
+      }
+    }
+  }
+}

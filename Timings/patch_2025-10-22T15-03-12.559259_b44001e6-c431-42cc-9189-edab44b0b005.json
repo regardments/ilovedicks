@@ -1,0 +1,54 @@
+{
+  "patch_id": "b44001e6-c431-42cc-9189-edab44b0b005",
+  "timestamp": "2025-10-22T15:03:12.559259",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "Cyclone": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 35,
+              "X": 15,
+              "Z": 15
+            },
+            "to": {
+              "Y": 35,
+              "X": 13,
+              "Z": 13
+            }
+          },
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 34,
+                  "X": 10,
+                  "Z": 10
+                },
+                "when": 0,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 34,
+                  "X": 10,
+                  "Z": 10
+                },
+                "when": 50,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

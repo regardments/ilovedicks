@@ -1,0 +1,676 @@
+---@module Utility.Signal
+local Signal = require("Utility/Signal")
+
+---@module Utility.Maid
+local Maid = require("Utility/Maid")
+
+---@module Features.Combat.Objects.AnimatorDefender
+local AnimatorDefender = require("Features/Combat/Objects/AnimatorDefender")
+
+---@module Features.Combat.Objects.PartDefender
+local PartDefender = require("Features/Combat/Objects/PartDefender")
+
+---@module Features.Combat.Objects.SoundDefender
+local SoundDefender = require("Features/Combat/Objects/SoundDefender")
+
+---@module Features.Combat.Objects.EffectDefender
+local EffectDefender = require("Features/Combat/Objects/EffectDefender")
+
+---@module Utility.Configuration
+local Configuration = require("Utility/Configuration")
+
+---@module Features.Combat.StateListener
+local StateListener = require("Features/Combat/StateListener")
+
+---@module Utility.Finder
+local Finder = require("Utility/Finder")
+
+---@module Game.InputClient
+local InputClient = require("Game/InputClient")
+
+---@module Features.Combat.EntityHistory
+local EntityHistory = require("Features/Combat/EntityHistory")
+
+---@module Utility.TaskSpawner
+local TaskSpawner = require("Utility/TaskSpawner")
+
+---@module Utility.Logger
+local Logger = require("Utility/Logger")
+
+-- Handle all defense related functions.
+local Defense = { lastMantraActivate = nil }
+
+-- Services.
+local replicatedStorage = game:GetService("ReplicatedStorage")
+local players = game:GetService("Players")
+local runService = game:GetService("RunService")
+local userInputService = game:GetService("UserInputService")
+local textChatService = game:GetService("TextChatService")
+
+-- Maids.
+local defenseMaid = Maid.new()
+
+-- Defender objects.
+local defenderPartObjects = {}
+local defenderAnimationObjects = {}
+local defenderObjects = {}
+
+-- Stored deleted playback data.
+local deletedPlaybackData = {}
+
+-- Mob animations.
+local mobAnimations = {}
+
+-- Current wisp string & position.
+local WISP_INPUT_MAP = { Z = 1, X = 2, C = 3, V = 4 }
+local cws = nil
+local cwp = nil
+
+-- State.
+local leftClickState = false
+local autoWispLocked = false
+
+-- Update.
+local lastVisualizationUpdate = os.clock()
+local lastGoldenTongueUpdate = os.clock()
+local lastHistoryUpdate = os.clock()
+local lastAutoArdourUpdate = os.clock()
+local lastAutoWispShift = nil
+local lastAutoWispUpdate = nil
+
+---Add animator defender.
+---@param animator Animator
+local addAnimatorDefender = LPH_NO_VIRTUALIZE(function(animator)
+	local animationDefender = AnimatorDefender.new(animator, mobAnimations)
+	defenderObjects[animator] = animationDefender
+	defenderAnimationObjects[animator] = animationDefender
+end)
+
+---Add sound defender.
+---@param sound Sound
+local addSoundDefender = LPH_NO_VIRTUALIZE(function(sound)
+	---@note: If there's nothing to base the sound position off of, then I'm just gonna skip it bruh.
+	local part = sound:FindFirstAncestorWhichIsA("BasePart")
+	if not part then
+		return
+	end
+
+	-- Add sound defender.
+	defenderObjects[sound] = SoundDefender.new(sound, part)
+end)
+
+---On game descendant added.
+---@param descendant Instance
+local onGameDescendantAdded = LPH_NO_VIRTUALIZE(function(descendant)
+	if descendant:IsA("Animator") then
+		return addAnimatorDefender(descendant)
+	end
+
+	if descendant:IsA("Sound") then
+		return addSoundDefender(descendant)
+	end
+
+	if descendant:IsA("BasePart") then
+		return Defense.cdpo(descendant)
+	end
+end)
+
+---On game descendant removed.
+---@param descendant Instance
+local onGameDescendantRemoved = LPH_NO_VIRTUALIZE(function(descendant)
+	local object = defenderObjects[descendant]
+	if not object then
+		return
+	end
+
+	if object.rpbdata then
+		deletedPlaybackData[descendant] = object.rpbdata
+	end
+
+	if defenderPartObjects[descendant] then
+		defenderPartObjects[descendant] = nil
+	end
+
+	if defenderAnimationObjects[descendant] then
+		defenderAnimationObjects[descendant] = nil
+	end
+
+	object:detach()
+	object[descendant] = nil
+end)
+
+---On client effect event.
+---@param name string?
+---@param data table?
+local onClientEffectEvent = LPH_NO_VIRTUALIZE(function(name, data)
+	if not name then
+		return
+	end
+
+	if not data or typeof(data) ~= "table" then
+		data = {}
+	end
+
+	defenderObjects[data] = EffectDefender.new(name, data)
+end)
+
+---Update history.
+local updateHistory = LPH_NO_VIRTUALIZE(function()
+	if os.clock() - lastHistoryUpdate <= 0.1 then
+		return
+	end
+
+	lastHistoryUpdate = os.clock()
+
+	local character = players.LocalPlayer.Character
+	if not character then
+		return
+	end
+
+	local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	if not humanoidRootPart then
+		return
+	end
+
+	EntityHistory.add(players.LocalPlayer, humanoidRootPart.CFrame, humanoidRootPart.AssemblyLinearVelocity, tick())
+
+	for _, player in next, players:GetPlayers() do
+		if player == players.LocalPlayer then
+			continue
+		end
+
+		local pcharacter = player.Character
+		if not pcharacter then
+			continue
+		end
+
+		local proot = pcharacter:FindFirstChild("HumanoidRootPart")
+		if not proot then
+			continue
+		end
+
+		EntityHistory.add(pcharacter, proot.CFrame, humanoidRootPart.AssemblyLinearVelocity, tick())
+	end
+end)
+
+---Update golden tongue.
+local updateGoldenTongue = LPH_NO_VIRTUALIZE(function()
+	if os.clock() - lastGoldenTongueUpdate <= 1.0 then
+		return
+	end
+
+	lastGoldenTongueUpdate = os.clock()
+
+	if not Configuration.expectToggleValue("AutoGoldenTongue") then
+		return
+	end
+
+	if not players.LocalPlayer.Backpack:FindFirstChild("Talent:Golden Tongue") then
+		return
+	end
+
+	local effectReplicator = replicatedStorage:FindFirstChild("EffectReplicator")
+	if not effectReplicator then
+		return
+	end
+
+	local effectReplicatorModule = require(effectReplicator)
+	if not effectReplicatorModule then
+		return
+	end
+
+	if effectReplicatorModule:FindEffect("GoldCool") then
+		return
+	end
+
+	if Configuration.expectToggleValue("CheckIfInCombat") and not effectReplicatorModule:FindEffect("Combat") then
+		return
+	end
+
+	local textChannels = textChatService:FindFirstChild("TextChannels")
+	local rbxSystem = textChannels and textChannels:FindFirstChild("RBXSystem")
+	if not rbxSystem then
+		return
+	end
+
+	defenseMaid:mark(TaskSpawner.spawn("Defender_GoldenTongueSendAsync", rbxSystem.SendAsync, rbxSystem, "/help"))
+end)
+
+---Update auto ardour.
+local updateAutoArdour = LPH_NO_VIRTUALIZE(function()
+	if os.clock() - lastAutoArdourUpdate <= 1.0 then
+		return
+	end
+	lastAutoArdourUpdate = os.clock()
+
+	if not Configuration.expectToggleValue("AutoArdour") then
+		return
+	end
+
+	local localPlayer = players.LocalPlayer
+	if not localPlayer then
+		return
+	end
+
+	local backpack = localPlayer:FindFirstChild("Backpack")
+	if not backpack or not backpack:FindFirstChild("Talent:Murmur: Ardour") then
+		return
+	end
+
+	local character = localPlayer.Character
+	if not character then
+		return
+	end
+
+	local success, hasWeapon = pcall(function()
+		return workspace.Live[localPlayer.Name].RightHand.HandWeapon ~= nil
+	end)
+
+	if not success or not hasWeapon then
+		return
+	end
+
+	local hasArdour = pcall(function()
+		return workspace.Live[localPlayer.Name].RightHand.HandWeapon.ArdourHum
+	end)
+
+	if hasArdour then
+		return
+	end
+
+	local characterHandler = character:FindFirstChild("CharacterHandler")
+	local requests = characterHandler and characterHandler:FindFirstChild("Requests")
+	local ardourRemote = requests and requests:FindFirstChild("Ardour")
+
+	if ardourRemote then
+		pcall(function()
+			ardourRemote:FireServer()
+		end)
+	end
+end)
+
+---Toggle visualizations.
+Defense.visualizations = LPH_NO_VIRTUALIZE(function()
+	for _, object in next, defenderObjects do
+		for _, hitbox in next, object.hmaid._tasks do
+			if typeof(hitbox) ~= "Instance" then
+				continue
+			end
+
+			hitbox.Transparency = Configuration.expectToggleValue("EnableVisualizations") and 0.2 or 1.0
+		end
+	end
+end)
+
+---Update visualization.
+local updateVisualizations = LPH_NO_VIRTUALIZE(function()
+	if not Configuration.expectToggleValue("EnableVisualizations") then
+		return
+	end
+
+	if os.clock() - lastVisualizationUpdate <= 5.0 then
+		return
+	end
+
+	lastVisualizationUpdate = os.clock()
+
+	for _, object in next, defenderObjects do
+		for idx, hitbox in next, object.hmaid._tasks do
+			if typeof(hitbox) ~= "Instance" then
+				continue
+			end
+
+			---@note: We call :Debris so we don't have to clean it up ourselves. We just unregister it from the maid.
+			if hitbox.Parent then
+				continue
+			end
+
+			object.hmaid._tasks[idx] = nil
+		end
+	end
+end)
+
+---Handle spell string & position.
+---@param position number
+---@param str string
+local hssp = LPH_NO_VIRTUALIZE(function(position, str)
+	if
+		lastAutoWispUpdate
+		and os.clock() - lastAutoWispUpdate <= (Configuration.expectOptionValue("AutoWispDelay") or 0)
+	then
+		return Logger.warn(
+			"(%.2f - %.2f = %.2f vs. %.2f) Auto Wisp is on cooldown.",
+			os.clock(),
+			lastAutoWispUpdate,
+			os.clock() - lastAutoWispUpdate,
+			Configuration.expectOptionValue("AutoWispDelay") or 0
+		)
+	end
+
+	if lastAutoWispShift and os.clock() - lastAutoWispShift <= 0.15 then
+		return Logger.warn(
+			"(%.2f - %.2f = %.2f vs. %.2f) Auto Wisp shift is on forced cooldown.",
+			os.clock(),
+			lastAutoWispShift,
+			os.clock() - lastAutoWispShift,
+			0.15
+		)
+	end
+
+	if autoWispLocked then
+		return Logger.warn("Auto Wisp is locked.")
+	end
+
+	if position <= 0 or position > #str then
+		return Logger.warn("Invalid position (%i vs. %i) for Auto Wisp.", position, #str)
+	end
+
+	local character = str:sub(position, position)
+	if character ~= "Z" and character ~= "X" and character ~= "C" and character ~= "V" then
+		return Logger.warn("Invalid character (%s) for Auto Wisp.", tostring(character))
+	end
+
+	local localPlayer = players.LocalPlayer
+	local localPlayerCharacter = localPlayer.Character
+	if not localPlayerCharacter then
+		return
+	end
+
+	local mantras = replicatedStorage:FindFirstChild("Requests")
+	mantras = mantras and mantras:FindFirstChild("Mantras")
+	local spellInput = mantras and mantras:FindFirstChild("RitualSpellInput")
+	if not spellInput then
+		return
+	end
+
+	local effectReplicator = replicatedStorage:FindFirstChild("EffectReplicator")
+	if not effectReplicator then
+		return
+	end
+
+	local effectReplicatorModule = require(effectReplicator)
+	if not effectReplicatorModule then
+		return
+	end
+
+	if not effectReplicatorModule:HasEffect("RitualCastingSpell") then
+		return Logger.warn("RitualCastingSpell effect not found.")
+	end
+
+	if effectReplicatorModule:HasEffect("Knocked") then
+		return Logger.warn("Knocked effect found.")
+	end
+
+	Logger.warn("Sending event for character (%s) with position (%i) and string (%s).", character, position, str)
+
+	autoWispLocked = true
+	lastAutoWispUpdate = os.clock()
+
+	spellInput:FireServer(WISP_INPUT_MAP[character] or character)
+end)
+
+---Update defenders.
+local updateDefenders = LPH_NO_VIRTUALIZE(function()
+	if Configuration.expectToggleValue("M1Hold") and leftClickState then
+		InputClient.left(players.LocalPlayer:GetMouse().Hit, true)
+	end
+
+	if Configuration.expectToggleValue("AutoWisp") and cwp and cws then
+		hssp(cwp, cws)
+	end
+
+	if not Configuration.expectToggleValue("EnableAutoDefense") then
+		return
+	end
+
+	for _, object in next, defenderAnimationObjects do
+		object:update()
+	end
+
+	for _, object in next, defenderPartObjects do
+		object:update()
+	end
+end)
+
+---Create a defender part object.
+---@param part BasePart
+---@param timing PartTiming?
+---@return PartDefender?
+Defense.cdpo = LPH_NO_VIRTUALIZE(function(part, timing)
+	-- This came from a module and we specified it in the parameters, meaning this is custom.
+	-- We need to re-encrypt the data. The actions will get re-encrypted when they get processed.
+	if timing and (timing.cbm or timing.umoa) then
+		timing["imxd"] = PP_SCRAMBLE_RE_NUM(timing["imxd"])
+		timing["imdd"] = PP_SCRAMBLE_RE_NUM(timing["imdd"])
+		timing["hitbox"] = Vector3.new(
+			PP_SCRAMBLE_RE_NUM(timing["hitbox"].X),
+			PP_SCRAMBLE_RE_NUM(timing["hitbox"].Y),
+			PP_SCRAMBLE_RE_NUM(timing["hitbox"].Z)
+		)
+	end
+
+	local partDefender = PartDefender.new(part, timing)
+	if not partDefender then
+		return nil
+	end
+
+	defenderObjects[part] = partDefender
+	defenderPartObjects[part] = partDefender
+
+	return partDefender
+end)
+
+---Return the defender animation object for an entity.
+---@param entity Instance
+---@return AnimatorDefender?
+Defense.dao = LPH_NO_VIRTUALIZE(function(entity)
+	for _, object in next, defenderAnimationObjects do
+		if object.entity ~= entity then
+			continue
+		end
+
+		return object
+	end
+end)
+
+---Get playback data of first defender with Animation ID.
+---@param aid string
+---@return PlaybackData?
+Defense.agpd = LPH_NO_VIRTUALIZE(function(aid)
+	---@note: Grabbing from 'rpbdata' means that we know that the data has been fully recorded.
+	for _, object in next, defenderAnimationObjects do
+		local pbdata = object.rpbdata[aid]
+		if not pbdata then
+			continue
+		end
+
+		return pbdata
+	end
+
+	---@note: Fallback to deleted playback data if that doesn't exist.
+	for _, rpbdata in next, deletedPlaybackData do
+		local pbdata = rpbdata[aid]
+		if not pbdata then
+			continue
+		end
+
+		return pbdata
+	end
+end)
+
+---On spell event.
+---@param name string
+---@param data any?
+local onSpellEvent = LPH_NO_VIRTUALIZE(function(name, data)
+	-- Close.
+	if name == "close" then
+		cws = nil
+		cwp = nil
+		lastAutoWispUpdate = nil
+		lastAutoWispShift = nil
+		autoWispLocked = false
+	end
+
+	-- Set the current position & string.
+	if name == "start" then
+		cws = data
+		cwp = 1
+		lastAutoWispUpdate = os.clock()
+		lastAutoWispShift = nil
+		autoWispLocked = false
+	end
+
+	-- Shift our position if we were successful.
+	if cws and cwp and name == "shift" then
+		cwp = cwp + 1
+		lastAutoWispShift = os.clock()
+		autoWispLocked = false
+	end
+end)
+
+---Feint flourish.
+function Defense.fflourish()
+	if not Configuration.expectToggleValue("FeintFlourish") then
+		return
+	end
+
+	local effectReplicator = replicatedStorage:FindFirstChild("EffectReplicator")
+	if not effectReplicator then
+		return Logger.warn("EffectReplicator not found for FeintFlourish.")
+	end
+
+	local effectReplicatorModule = require(effectReplicator)
+	if not effectReplicatorModule then
+		return Logger.warn("EffectReplicator module not found for FeintFlourish.")
+	end
+
+	if not effectReplicatorModule:FindEffect("MidAttack") then
+		return Logger.warn("Not MidAttack effect for FeintFlourish.")
+	end
+
+	local mantra = Finder.ncdm()
+	if not mantra then
+		return Logger.warn("No mantra found for FeintFlourish.")
+	end
+
+	if effectReplicatorModule:FindEffect("FeintCool") then
+		return Logger.warn("No avaliable feint for FeintFlourish.")
+	end
+
+	local lastAnimationTiming = StateListener.lAnimTiming
+	if not lastAnimationTiming then
+		return Logger.warn("No last animation timing found for FeintFlourish.")
+	end
+
+	if not lastAnimationTiming.smod:match("Flourish") then
+		return Logger.warn("Last animation is not a flourish for FeintFlourish.")
+	end
+
+	-- Activate mantra.
+	Logger.warn("(%s) FeintFlourish activated mantra.", mantra.Name)
+
+	InputClient.amantra(mantra)
+
+	-- Wait.
+	task.wait(0.1)
+
+	-- Feint mantra.
+	Logger.warn("(%s) FeintFlourish feinted mantra.", mantra.Name)
+
+	InputClient.feint()
+end
+
+---Initialize defense.
+function Defense.init()
+	-- Cache mob animations.
+	local assetFolder = replicatedStorage:WaitForChild("Assets")
+	local animationFolder = assetFolder:WaitForChild("Anims")
+	local mobsAnimationFolder = animationFolder:WaitForChild("Mobs")
+
+	for _, animation in next, mobsAnimationFolder:QueryDescendants("Animation") do
+		if animation.Name == "RunningAttack" then
+			continue
+		end
+
+		mobAnimations[animation.AnimationId] = animation
+	end
+
+	-- Requests.
+	local requests = replicatedStorage:WaitForChild("Requests")
+	local clientEffect = requests:WaitForChild("ClientEffect")
+	local clientEffectLarge = requests:WaitForChild("ClientEffectLarge")
+	local clientEffectDirect = requests:WaitForChild("ClientEffectDirect")
+	local spell = requests:WaitForChild("Mantras"):WaitForChild("RitualSpellInput")
+
+	-- Signals.
+	local gameDescendantAdded = Signal.new(game.DescendantAdded)
+	local gameDescendantRemoved = Signal.new(game.DescendantRemoving)
+	local inputBegan = Signal.new(userInputService.InputBegan)
+	local inputEnded = Signal.new(userInputService.InputEnded)
+	local renderStepped = Signal.new(runService.RenderStepped)
+	local postSimulation = Signal.new(runService.PostSimulation)
+	local clientEffectEvent = Signal.new(clientEffect.OnClientEvent)
+	local clientEffectLargeEvent = Signal.new(clientEffectLarge.OnClientEvent)
+	local cientEffectDirect = Signal.new(clientEffectDirect.Event)
+	local spellEvent = Signal.new(spell.OnClientEvent)
+
+	---@note: Need this to detect UI presses / game processed inputs.
+	defenseMaid:mark(inputBegan:connect("Defense_OnInputBegan", function(input, gameProcessed)
+		if gameProcessed then
+			return
+		end
+
+		if input.UserInputType == Enum.UserInputType.MouseButton2 then
+			TaskSpawner.delay("StateListener_FeintFlourish", function()
+				return 0.07
+			end, Defense.fflourish)
+		end
+
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 then
+			return
+		end
+
+		leftClickState = true
+	end))
+
+	defenseMaid:mark(inputEnded:connect("Defense_OnInputEnded", function(input, _)
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 then
+			return
+		end
+
+		leftClickState = false
+	end))
+
+	defenseMaid:mark(gameDescendantAdded:connect("Defense_OnDescendantAdded", onGameDescendantAdded))
+	defenseMaid:mark(gameDescendantRemoved:connect("Defense_OnDescendantRemoved", onGameDescendantRemoved))
+	defenseMaid:mark(renderStepped:connect("Defense_UpdateVisualizations", updateVisualizations))
+	defenseMaid:mark(renderStepped:connect("Defense_UpdateHistory", updateHistory))
+	defenseMaid:mark(renderStepped:connect("Defense_UpdateGoldenTongue", updateGoldenTongue))
+	defenseMaid:mark(renderStepped:connect("Defense_UpdateAutoArdour", updateAutoArdour))
+	defenseMaid:mark(postSimulation:connect("Defense_UpdateDefenders", updateDefenders))
+	defenseMaid:mark(clientEffectEvent:connect("Defense_ClientEffectEvent", onClientEffectEvent))
+	defenseMaid:mark(clientEffectLargeEvent:connect("Defense_ClientEffectEventLarge", onClientEffectEvent))
+	defenseMaid:mark(cientEffectDirect:connect("Defense_ClientEffectEventDirect", onClientEffectEvent))
+	defenseMaid:mark(spellEvent:connect("Defense_SpellEvent", onSpellEvent))
+
+	for _, descendant in next, game:GetDescendants() do
+		onGameDescendantAdded(descendant)
+	end
+
+	-- Log.
+	Logger.warn("Defense initialized.")
+end
+
+---Detach defense.
+function Defense.detach()
+	for _, object in next, defenderObjects do
+		object:detach()
+	end
+
+	defenseMaid:clean()
+
+	Logger.warn("Defense detached.")
+end
+
+-- Return Defense module.
+return Defense

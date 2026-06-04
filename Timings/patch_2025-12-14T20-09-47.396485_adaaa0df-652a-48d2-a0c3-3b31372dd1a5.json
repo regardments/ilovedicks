@@ -1,0 +1,64 @@
+{
+  "patch_id": "adaaa0df-652a-48d2-a0c3-3b31372dd1a5",
+  "timestamp": "2025-12-14T20:09:47.396485",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://72259757199810": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 300,
+                "X": 300,
+                "Z": 300
+              },
+              "when": 250,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://72259757199810",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "RegentLariat",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": false,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": true,
+          "imxd": 1034,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

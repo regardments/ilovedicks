@@ -1,0 +1,26 @@
+{
+  "patch_id": "e1d62d8c-be41-4bb2-88cb-7b15dbecff03",
+  "timestamp": "2025-10-02T19:33:18.267043",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://7599113567": {
+        "status": "modified",
+        "changes": {
+          "imxd": {
+            "from": 0,
+            "to": 107
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "DaggerThrow"
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

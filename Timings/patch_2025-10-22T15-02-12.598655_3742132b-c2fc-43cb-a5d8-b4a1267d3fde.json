@@ -1,0 +1,26 @@
+{
+  "patch_id": "3742132b-c2fc-43cb-a5d8-b4a1267d3fde",
+  "timestamp": "2025-10-22T15:02:12.598655",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "Cyclone": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 35,
+              "X": 12,
+              "Z": 12
+            },
+            "to": {
+              "Y": 35,
+              "X": 15,
+              "Z": 15
+            }
+          }
+        }
+      }
+    }
+  }
+}

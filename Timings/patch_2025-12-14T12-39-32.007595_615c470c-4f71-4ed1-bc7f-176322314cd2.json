@@ -1,0 +1,86 @@
+{
+  "patch_id": "615c470c-4f71-4ed1-bc7f-176322314cd2",
+  "timestamp": "2025-12-14T12:39:32.007595",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://114805982806619": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 32,
+                "X": 32,
+                "Z": 31
+              },
+              "when": 480,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "3",
+              "hitbox": {
+                "Y": 32,
+                "X": 32,
+                "Z": 31
+              },
+              "when": 980,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "2",
+              "hitbox": {
+                "Y": 32,
+                "X": 32,
+                "Z": 31
+              },
+              "when": 980,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://114805982806619",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "RatKingGoldenSlamCombo",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": true,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": true,
+          "imxd": 107,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

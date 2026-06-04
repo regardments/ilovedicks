@@ -1,0 +1,30 @@
+{
+  "patch_id": "31807acb-8e16-4f87-8826-fd8fff7883cc",
+  "timestamp": "2025-10-20T17:15:15.595466",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://7599113567": {
+        "status": "modified",
+        "changes": {
+          "fhb": {
+            "from": true,
+            "to": false
+          },
+          "smod": {
+            "from": "DaggerThrow",
+            "to": "IceDaggers"
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "tag": {
+            "from": "Undefined",
+            "to": "Mantra"
+          }
+        }
+      }
+    }
+  }
+}

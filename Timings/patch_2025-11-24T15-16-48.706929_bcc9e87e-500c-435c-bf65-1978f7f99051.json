@@ -1,0 +1,42 @@
+{
+  "patch_id": "bcc9e87e-500c-435c-bf65-1978f7f99051",
+  "timestamp": "2025-11-24T15:16:48.706929",
+  "author": "Blastbrean",
+  "diff": {
+    "effect": {
+      "MetalArmament": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 13,
+                  "X": 13,
+                  "Z": 16
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 10,
+                  "Z": 25
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

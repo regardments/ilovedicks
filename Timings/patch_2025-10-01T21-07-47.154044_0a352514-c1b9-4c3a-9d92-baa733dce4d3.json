@@ -1,0 +1,61 @@
+{
+  "patch_id": "0a352514-c1b9-4c3a-9d92-baa733dce4d3",
+  "timestamp": "2025-10-01T21:07:47.154044",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://7612116246": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": false,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "N/A",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 10,
+                "X": 10,
+                "Z": 15
+              },
+              "when": 250,
+              "ihbc": false
+            }
+          ],
+          "pfh": false,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://7612116246",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "IceSaber1",
+          "imxd": 86,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

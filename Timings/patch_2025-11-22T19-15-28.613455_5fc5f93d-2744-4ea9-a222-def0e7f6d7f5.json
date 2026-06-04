@@ -1,0 +1,18 @@
+{
+  "patch_id": "5fc5f93d-2744-4ea9-a222-def0e7f6d7f5",
+  "timestamp": "2025-11-22T19:15:28.613455",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "EruptPlacement": {
+        "status": "modified",
+        "changes": {
+          "nvfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

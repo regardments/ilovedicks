@@ -1,0 +1,22 @@
+{
+  "patch_id": "b56b0ac3-31ad-438c-adc6-6500e4bb99cb",
+  "timestamp": "2025-10-20T16:47:40.921617",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://10357806593": {
+        "status": "modified",
+        "changes": {
+          "smod": {
+            "from": "N/A",
+            "to": "TornadoKick"
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

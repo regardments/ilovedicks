@@ -1,0 +1,13 @@
+{
+  "patch_id": "baa1edad-23db-4d94-94f1-b208d1af1df4",
+  "timestamp": "2025-11-24T16:27:18.750757",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "WindProjectile": {
+        "status": "removed",
+        "name": "WindProjectile"
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "patch_id": "2ffaa394-ef36-414d-8e18-e3864c1f5ce3",
+  "timestamp": "2025-12-14T19:47:28.401639",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://80463427840633": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 0,
+                "X": 0,
+                "Z": 0
+              },
+              "when": 0,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://80463427840633",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "LordRegentRightHook",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": false,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": true,
+          "imxd": 1034,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

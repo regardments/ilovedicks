@@ -1,0 +1,13 @@
+{
+  "patch_id": "9937c9b2-169f-46ec-8daa-8510b5b80375",
+  "timestamp": "2025-10-22T15:22:13.050662",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://114463797015507": {
+        "status": "removed",
+        "name": "RazorBlitzFollowup"
+      }
+    }
+  }
+}

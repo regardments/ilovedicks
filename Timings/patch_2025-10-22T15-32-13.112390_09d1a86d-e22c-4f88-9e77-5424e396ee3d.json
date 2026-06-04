@@ -1,0 +1,13 @@
+{
+  "patch_id": "09d1a86d-e22c-4f88-9e77-5424e396ee3d",
+  "timestamp": "2025-10-22T15:32:13.112390",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://5773977536": {
+        "status": "removed",
+        "name": "MaskOffGaze"
+      }
+    }
+  }
+}

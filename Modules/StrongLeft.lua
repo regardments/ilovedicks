@@ -1,0 +1,26 @@
+---@type Action
+local Action = getfenv().Action
+
+---Module function.
+---@param self AnimatorDefender
+---@param timing AnimationTiming
+return function(self, timing)
+	local distance = self:distance(self.entity)
+	local action = Action.new()
+	action._when = 500
+	action._type = "Parry"
+	action.hitbox = Vector3.new(23, 15, 25)
+	action.name = string.format("(%.2f) Strong Left Timing", distance)
+
+	if self.entity.Name:match(".theduke") then
+		action.ihbc = true
+		action.name = string.format("(%.2f) Duke Strong Left Timing", self.track.Speed)
+	end
+	if self.entity.Name:match(".ratking") then
+		action._when = 240
+		action.hitbox = Vector3.new(30, 30, 40)
+		action.name = string.format("(%.2f) Rat King Strong Left Timing", self.track.Speed)
+	end
+
+	return self:action(timing, action)
+end

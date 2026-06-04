@@ -1,0 +1,49 @@
+{
+  "patch_id": "b64a6d5c-f322-4218-8d92-e2275d79929a",
+  "timestamp": "2025-10-05T14:00:02.527978",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://15713914142": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": false,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "N/A",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": false,
+          "ndfb": false,
+          "duih": true,
+          "after": 0,
+          "_id": "rbxassetid://15713914142",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 15,
+            "Z": 29
+          },
+          "punishable": 0,
+          "name": "IceCarve",
+          "imxd": 129,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

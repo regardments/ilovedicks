@@ -1,0 +1,2697 @@
+{
+  "patch_id": "3f80c778-0f8e-49e1-bfdb-c44170f3a285",
+  "timestamp": "2025-10-01T20:29:39.424266",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://11887874227": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "SwordUppercut",
+            "to": "1_GenericSwordUppercut"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 75
+          },
+          "smod": {
+            "from": "SwordSwing",
+            "to": "WeaponUppercutTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://89177958009696": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "FangCoilSwing1",
+            "to": "1_GenericFangCoil1"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "FangCoilSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://138417702895229": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "1TwinbladeM1_1",
+            "to": "1_GenericTwinblade1"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://6437665734": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "RightGunShot",
+            "to": "2_GenericPistol1"
+          },
+          "imxd": {
+            "from": 150,
+            "to": 64
+          },
+          "smod": {
+            "from": "GunShot",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://14435773739": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 12,
+                  "Z": 15
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "OneHandedShot2",
+            "to": "1_GenericPistolShot2\r"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://7600224169": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "SwordSwing2",
+            "to": "1_GenericSword2"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "SwordSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://6432920452": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 11,
+                  "X": 11,
+                  "Z": 14
+                },
+                "when": 570,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "SideGunShot",
+            "to": "2_GenericPistol2"
+          },
+          "imxd": {
+            "from": 96,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://16372479940": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "JusKaritaSwing3",
+            "to": "1_GenericKarita3"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "JusKaritaSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://8278933540": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "JusKaritaFlourish",
+            "to": "1_GenericKaritaFlourish"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 96
+          },
+          "smod": {
+            "from": "Flourish",
+            "to": "WeaponFlourishTest"
+          }
+        }
+      },
+      "rbxassetid://6675698010": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "GreatswordSwing1",
+            "to": "2_GenericGreatsword1"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "GreatswordSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://9930447958": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 11,
+                  "X": 12,
+                  "Z": 14
+                },
+                "when": 330,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "RifleM1_3",
+            "to": "1_GenericMusket3"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 107
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://5064195992": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "BattleAxeSwing1",
+            "to": "1_GenericGreatAxe1"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "GreataxeSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://11887887621": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "GreatswordUppercut",
+            "to": "1_GenericHeavyUppercut"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 107
+          },
+          "smod": {
+            "from": "GreatswordUppercut",
+            "to": "WeaponUppercutTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://7627854272": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "1HandDaggerSwing1",
+            "to": "1_GenericDagger1"
+          },
+          "imxd": {
+            "from": 21,
+            "to": 107
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://8161043368": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 11,
+                  "Z": 12
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "name": {
+            "from": "LegionM1_2",
+            "to": "1_GenericGaleKata2"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "LegionSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://11887901212": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "SpearUppercut",
+            "to": "1_GenericSpearUppercut"
+          },
+          "imxd": {
+            "from": 86,
+            "to": 75
+          },
+          "smod": {
+            "from": "SpearUppercut",
+            "to": "WeaponUppercutTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://123115833203242": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 15,
+                  "Z": 18
+                },
+                "when": 520,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "name": {
+            "from": "LegionMasteryM1_1",
+            "to": "1_GenericLegionKata1"
+          },
+          "imxd": {
+            "from": 107,
+            "to": 64
+          },
+          "smod": {
+            "from": "LegionMasterySwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://14435766591": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "PistolSmack2",
+            "to": "1_GenericPistol2"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://6063195211": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "NavaeSwing3",
+            "to": "1_GenericNavae3"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "NavaeSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://9484850093": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "SwordKick",
+            "to": "1_GenericFlourish"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 75
+          },
+          "smod": {
+            "from": "Flourish",
+            "to": "WeaponFlourishTest"
+          }
+        }
+      },
+      "rbxassetid://9597289518": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "NavaeFlourish",
+            "to": "1_GenericNavaeFlourish"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "Flourish",
+            "to": "WeaponFlourishTest"
+          }
+        }
+      },
+      "rbxassetid://17666284182": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "Release",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 10,
+                  "Z": 15
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "AraneaM1_2",
+            "to": "2_GenericBow2"
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://82342705344145": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 12,
+                  "X": 11,
+                  "Z": 14
+                },
+                "when": 500,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "hitbox": {
+            "from": {
+              "Y": 11,
+              "X": 12,
+              "Z": 16
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "TwinbladeRunning",
+            "to": "1_GenericTwinbladeRunning"
+          },
+          "imxd": {
+            "from": 64,
+            "to": 86
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponRunningAttackTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://16372478422": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "JusKaritaSwing2",
+            "to": "1_GenericKarita2"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "JusKaritaSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://8161044711": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 11,
+                  "Z": 12
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "name": {
+            "from": "LegionM1_3",
+            "to": "1_GenericGaleKata3"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "LegionSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://17742747596": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "WeaponAerialAttackTest",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": false,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://17742747596",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "2_GenericPistolAerial",
+          "imxd": 64,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://6607538047": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "1HandedGreatswordSwing2",
+            "to": "1_GenericGreatsword2"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "GreatswordSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://5063313656": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "Release",
+                "hitbox": {
+                  "Y": 20,
+                  "X": 20,
+                  "Z": 20
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "hitbox": {
+            "from": {
+              "Y": 12,
+              "X": 12,
+              "Z": 15
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "FistRunningAttack",
+            "to": "1_GenericDaggerRunning"
+          },
+          "imxd": {
+            "from": 107,
+            "to": 75
+          },
+          "smod": {
+            "from": "FistRunningAttack",
+            "to": "WeaponRunningAttackTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://7616407967": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "NavaeSwing1",
+            "to": "1_GenericNavae1"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "NavaeSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://100190998225588": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "1TwinbladeM1_2",
+            "to": "1_GenericTwinblade2"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://5950080662": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "DaggerFollowUp",
+            "to": "1_GenericDagger3"
+          },
+          "imxd": {
+            "from": 21,
+            "to": 107
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://8194213529": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 12,
+                  "X": 12,
+                  "Z": 16
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "hitbox": {
+            "from": {
+              "Y": 12,
+              "X": 14,
+              "Z": 16
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "AerialKick",
+            "to": "1_GenericFistAerial"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 96
+          },
+          "smod": {
+            "from": "FistAerial",
+            "to": "WeaponAerialAttackTest"
+          }
+        }
+      },
+      "rbxassetid://97447284729710": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "FangCoilSwing3",
+            "to": "1_GenericFangCoil3"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 96
+          },
+          "smod": {
+            "from": "FangCoilSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://92625055798566": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "WeaponAerialAttackTest",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": false,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://92625055798566",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "1_GenericBowAerial",
+          "imxd": 86,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://123456225328134": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "2TwinbladeM1_1",
+            "to": "2_GenericTwinblade1"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://7627049402": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "1SpearSwing1",
+            "to": "1_GenericSpear2"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "SpearSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://131576892263777": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 15,
+                  "Z": 18
+                },
+                "when": 520,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "name": {
+            "from": "LegionMasteryM1_2",
+            "to": "1_GenericLegionKata2"
+          },
+          "imxd": {
+            "from": 107,
+            "to": 64
+          },
+          "smod": {
+            "from": "LegionMasterySwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://8249177669": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "RapierSlash2",
+            "to": "1_GenericRapier2"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 107
+          },
+          "smod": {
+            "from": "RapierSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://5067090007": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "GreataxeSwing2",
+            "to": "1_GenericGreatAxe2"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "GreataxeSwing",
+            "to": "WeaponTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://90742361803263": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 15,
+                  "Z": 18
+                },
+                "when": 520,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "name": {
+            "from": "LegionMasteryM1_3",
+            "to": "1_GenericLegionKata3"
+          },
+          "imxd": {
+            "from": 107,
+            "to": 64
+          },
+          "smod": {
+            "from": "LegionMasterySwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://8367730650": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "WeaponRunningAttackTest",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": true,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://8367730650",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "1_GenericKaritaRunning",
+          "imxd": 75,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://17108126093": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "WeaponRunningAttackTest",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": true,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://17108126093",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "1_GenericRifleRunning",
+          "imxd": 75,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://17666287806": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "Release",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 10,
+                  "Z": 15
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "AraneaM1_3",
+            "to": "2_GenericBow3"
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://16372476897": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "JusKaritaSwing1\r",
+            "to": "1_GenericKarita1"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "JusKaritaSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://5827250000": {
+        "status": "modified",
+        "changes": {
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "hitbox": {
+            "from": {
+              "Y": 16,
+              "X": 14,
+              "Z": 20
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "Spear3RunningAttack",
+            "to": "1_GenericRapierRunning"
+          },
+          "imxd": {
+            "from": 129,
+            "to": 75
+          },
+          "smod": {
+            "from": "RunningAttack",
+            "to": "WeaponRunningAttackTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://5827423063": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 11,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "hitbox": {
+            "from": {
+              "Y": 15,
+              "X": 12,
+              "Z": 18
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "SpearRunning",
+            "to": "2_GenericSpearRunning"
+          },
+          "imxd": {
+            "from": 118,
+            "to": 75
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponRunningAttackTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://8161094751": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 11,
+                  "Z": 12
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "name": {
+            "from": "LegionM1_4",
+            "to": "1_GenericGaleKata4"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "LegionSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://8161039359": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 11,
+                  "Z": 12
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "name": {
+            "from": "LegionM1_1",
+            "to": "1_GenericGaleKata1"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "LegionSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://7627558238": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "SpearSwing2",
+            "to": "2_GenericSpear2"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "SpearSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://107653610777693": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "2TwinbladeM1_2",
+            "to": "2_GenericTwinblade2"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://112381112390648": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "WeaponRunningAttackTest",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": true,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://112381112390648",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "1_GenericBowRunning",
+          "imxd": 86,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://122256431354649": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 12,
+                  "X": 16,
+                  "Z": 12
+                },
+                "when": 500,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "Greatcannon2",
+            "to": "1_GenericGreatcannon2"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://11363599835": {
+        "status": "modified",
+        "changes": {
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "hitbox": {
+            "from": {
+              "Y": 19,
+              "X": 16.625,
+              "Z": 19
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "HeavyAerial",
+            "to": "1_GenericHeavyAerial"
+          },
+          "imxd": {
+            "from": 53,
+            "to": 86
+          },
+          "smod": {
+            "from": "HeavyAerial",
+            "to": "WeaponAerialAttackTest"
+          }
+        }
+      },
+      "rbxassetid://6607519294": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "1HandedGreatswordSwing1",
+            "to": "1_GenericGreatsword1"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "GreatswordSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://95084976730503": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "FangCoilFlourish",
+            "to": "1_GenericFangCoilFlourish"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "Flourish",
+            "to": "WeaponFlourishTest"
+          }
+        }
+      },
+      "rbxassetid://17636520960": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "Release",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 10,
+                  "Z": 15
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "AraneaM1_4",
+            "to": "2_GenericBowFlourish"
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://14435763579": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "PistolSmack1",
+            "to": "1_GenericPistol1"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://14435770311": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 12,
+                  "Z": 15
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "OneHandedShot1",
+            "to": "1_GenericPistolShot1"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://17666279427": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "Release",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 10,
+                  "Z": 15
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "AraneaM1_1",
+            "to": "2_GenericBow1"
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://9928485641": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 11,
+                  "X": 12,
+                  "Z": 14
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "RifleM1_2",
+            "to": "1_GenericMusket2"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 107
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://14435778571": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 12,
+                  "Z": 15
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "OneHandedShot3",
+            "to": "1_GenericPistolShot3"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 64
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://11887876811": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "WeaponUppercutTest",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": true,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://11887876811",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "1_GenericPistolUppercut",
+          "imxd": 75,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://6675703249": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "GreatswordSwing2",
+            "to": "2_GenericGreatsword2"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "GreatswordSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://5067105317": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "GreataxeSwing3",
+            "to": "1_GenericGreatAxe3"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "GreataxeSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://93362023058024": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 15,
+                  "Z": 18
+                },
+                "when": 520,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "LegionMasteryFlourish",
+            "to": "1_GenericLegionKataFlourish"
+          },
+          "imxd": {
+            "from": 107,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponFlourishTest"
+          }
+        }
+      },
+      "rbxassetid://6063188218": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "NavaeSwing2",
+            "to": "1_GenericNavae2"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "NavaeSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://95071929775027": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 11,
+                  "Z": 14
+                },
+                "when": 500,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "hitbox": {
+            "from": {
+              "Y": 14,
+              "X": 12,
+              "Z": 16
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "TwinbladeAerial",
+            "to": "1_GenericTwinbladeAerial"
+          },
+          "imxd": {
+            "from": 64,
+            "to": 86
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponAerialAttackTest"
+          }
+        }
+      },
+      "rbxassetid://103284896140202": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "FangCoilSwing2",
+            "to": "1_GenericFangCoil2"
+          },
+          "imxd": {
+            "from": 75,
+            "to": 86
+          },
+          "smod": {
+            "from": "FangCoilSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://11887938902": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "JusKaritaUppercut",
+            "to": "1_GenericDaggerUppercut"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 75
+          },
+          "smod": {
+            "from": "JusKaritaUppercut",
+            "to": "WeaponUppercutTest"
+          }
+        }
+      },
+      "rbxassetid://7576748728": {
+        "status": "modified",
+        "changes": {
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "hitbox": {
+            "from": {
+              "Y": 16,
+              "X": 14,
+              "Z": 16
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "SwordAerialStab",
+            "to": "1_GenericSwordAerial"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 86
+          },
+          "smod": {
+            "from": "SwordAerial",
+            "to": "WeaponAerialAttackTest"
+          }
+        }
+      },
+      "rbxassetid://8249175106": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "RapierSlash1",
+            "to": "1_GenericRapier1"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 107
+          },
+          "smod": {
+            "from": "RapierSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://17108040817": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "hitbox": {
+            "from": {
+              "Y": 14,
+              "X": 14,
+              "Z": 14
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "PistolRunning",
+            "to": "1_GenericPistolRunning"
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponRunningAttackTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://114108670383026": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 10,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "1TwinbladeM1_3",
+            "to": "1_GenericTwinblade3"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://7600160919": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "SwordSwing1",
+            "to": "1_GenericSword1"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "SwordSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://106858298622632": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 12,
+                  "X": 16,
+                  "Z": 12
+                },
+                "when": 500,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "Greatcannon1",
+            "to": "1_GenericGreatcannon1"
+          },
+          "imxd": {
+            "from": 53,
+            "to": 64
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://9928429385": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 11,
+                  "X": 12,
+                  "Z": 14
+                },
+                "when": 330,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "name": {
+            "from": "RifleM1_1",
+            "to": "1_GenericMusket1"
+          },
+          "imxd": {
+            "from": 43,
+            "to": 107
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://7626771915": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "1SpearSwing2",
+            "to": "1_GenericSpear1"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "SpearSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://7627889074": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "DaggerSwing2",
+            "to": "1_GenericDagger2"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 107
+          },
+          "smod": {
+            "from": "DaggerSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://7576614609": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 25,
+                  "X": 25,
+                  "Z": 20
+                },
+                "when": 300,
+                "ihbc": false
+              }
+            ],
+            "to": []
+          },
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "hitbox": {
+            "from": {
+              "Y": 15,
+              "X": 12,
+              "Z": 18
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "DaggerAerial",
+            "to": "1_GenericDaggerAerial"
+          },
+          "imxd": {
+            "from": 123,
+            "to": 107
+          },
+          "smod": {
+            "from": "DaggerAerial",
+            "to": "WeaponAerialAttackTest"
+          }
+        }
+      },
+      "rbxassetid://7627372304": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 16,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 533,
+                "ihbc": false
+              }
+            ]
+          },
+          "name": {
+            "from": "SpearSwing1",
+            "to": "2_GenericSpear1"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 64
+          },
+          "smod": {
+            "from": "SpearSwing",
+            "to": "WeaponTest"
+          }
+        }
+      },
+      "rbxassetid://6669352471": {
+        "status": "modified",
+        "changes": {
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "mat": {
+            "from": 900,
+            "to": 2000
+          },
+          "hitbox": {
+            "from": {
+              "Y": 17,
+              "X": 8.000000953674316,
+              "Z": 16.000001907348633
+            },
+            "to": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            }
+          },
+          "name": {
+            "from": "RunningAttackSword1",
+            "to": "1_GenericGreatswordRunning"
+          },
+          "imxd": {
+            "from": 107,
+            "to": 75
+          },
+          "smod": {
+            "from": "RunningAttack",
+            "to": "WeaponRunningAttackTest"
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://11887892548": {
+        "status": "modified",
+        "changes": {
+          "name": {
+            "from": "GreathammerUppercut\r",
+            "to": "1_GenericGreathammerUppercut"
+          },
+          "imxd": {
+            "from": 32,
+            "to": 75
+          },
+          "smod": {
+            "from": "GreathammerUppercut",
+            "to": "WeaponUppercutTest"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "patch_id": "398b0e3c-84b2-428e-96f6-d197e844776a",
+  "timestamp": "2025-10-22T15:08:12.719453",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://132405692502171": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 20,
+                  "X": 23,
+                  "Z": 11
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 20,
+                  "X": 23,
+                  "Z": 14
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    "part": {
+      "Cyclone": {
+        "status": "modified",
+        "changes": {
+          "imdd": {
+            "from": 10,
+            "to": 12
+          }
+        }
+      }
+    }
+  }
+}

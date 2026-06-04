@@ -1,0 +1,64 @@
+{
+  "patch_id": "498fb6a1-9362-4364-bfc1-4d4451852a86",
+  "timestamp": "2025-12-14T21:06:02.719372",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://111647546998749": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 0,
+                "X": 0,
+                "Z": 0
+              },
+              "when": 0,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://111647546998749",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "RegentGrab",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": false,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": true,
+          "imxd": 1002,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

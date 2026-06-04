@@ -1,0 +1,39 @@
+{
+  "patch_id": "4740041b-1b4c-478d-b925-df2926410ee8",
+  "timestamp": "2025-11-22T19:15:09.198236",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "EruptPlacement": {
+        "status": "added",
+        "data": {
+          "umoa": true,
+          "pname": "EruptPlacement",
+          "smod": "EruptionModule",
+          "hso": 0,
+          "bfht": 0.3,
+          "actions": [],
+          "ndfb": false,
+          "after": 0,
+          "uhc": false,
+          "nvfb": false,
+          "duih": false,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "EruptPlacement",
+          "imxd": 118,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "patch_id": "42e879e9-c82c-47b7-a126-ff9017cea9ab",
+  "timestamp": "2025-12-14T13:11:06.925870",
+  "author": "Juanito",
+  "diff": {
+    "effect": {
+      "OwlDisperse": {
+        "status": "modified",
+        "changes": {
+          "imxd": {
+            "from": 300,
+            "to": 120
+          },
+          "ndfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

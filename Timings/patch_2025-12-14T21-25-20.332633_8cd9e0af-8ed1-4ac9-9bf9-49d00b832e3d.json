@@ -1,0 +1,22 @@
+{
+  "patch_id": "8cd9e0af-8ed1-4ac9-9bf9-49d00b832e3d",
+  "timestamp": "2025-12-14T21:25:20.332633",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://111647546998749": {
+        "status": "modified",
+        "changes": {
+          "umoa": {
+            "from": false,
+            "to": true
+          },
+          "smod": {
+            "from": "N/A",
+            "to": "RegentGrab"
+          }
+        }
+      }
+    }
+  }
+}

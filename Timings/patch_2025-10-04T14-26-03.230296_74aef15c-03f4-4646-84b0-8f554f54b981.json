@@ -1,0 +1,26 @@
+{
+  "patch_id": "74aef15c-03f4-4646-84b0-8f554f54b981",
+  "timestamp": "2025-10-04T14:26:03.230296",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "HumanoidRootPart": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 0,
+              "X": 0,
+              "Z": 0
+            },
+            "to": {
+              "Y": 5,
+              "X": 5,
+              "Z": 5
+            }
+          }
+        }
+      }
+    }
+  }
+}

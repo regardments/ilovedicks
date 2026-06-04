@@ -1,0 +1,55 @@
+{
+  "patch_id": "bc69da53-d2d0-49b0-aad0-cea03467ecbe",
+  "timestamp": "2025-12-14T16:53:21.320983",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "ClusterIndicator": {
+        "status": "added",
+        "data": {
+          "umoa": false,
+          "rpd": 0,
+          "pname": "ClusterIndicator",
+          "smod": "N/A",
+          "hso": 0,
+          "duih": false,
+          "nbfb": false,
+          "bfht": 0.3,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 45,
+                "X": 50,
+                "Z": 50
+              },
+              "when": 0,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "rsd": 0,
+          "after": 0,
+          "uhc": true,
+          "nvfb": false,
+          "rpue": false,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "ClusterIndicator",
+          "imxd": 150,
+          "smn": false,
+          "fhb": false,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

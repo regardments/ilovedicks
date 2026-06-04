@@ -1,0 +1,36 @@
+{
+  "patch_id": "94398d7f-f8e1-4ec4-ba74-4d258d8475fd",
+  "timestamp": "2025-10-01T20:59:10.712245",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "MalStrike1": {
+        "status": "modified",
+        "changes": {
+          "ndfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "MalStrike3": {
+        "status": "modified",
+        "changes": {
+          "ndfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "MalStrike2": {
+        "status": "modified",
+        "changes": {
+          "ndfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

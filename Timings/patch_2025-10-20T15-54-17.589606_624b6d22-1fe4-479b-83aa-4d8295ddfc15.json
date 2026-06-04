@@ -1,0 +1,62 @@
+{
+  "patch_id": "624b6d22-1fe4-479b-83aa-4d8295ddfc15",
+  "timestamp": "2025-10-20T15:54:17.589606",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://13241958217": {
+        "status": "modified",
+        "changes": {
+          "pfh": {
+            "from": false,
+            "to": true
+          },
+          "tag": {
+            "from": "Undefined",
+            "to": "M1"
+          }
+        }
+      },
+      "rbxassetid://13242083070": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "WeaponTest",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": true,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://13242083070",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "FirstLight2",
+          "imxd": 64,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "M1"
+        }
+      }
+    }
+  }
+}

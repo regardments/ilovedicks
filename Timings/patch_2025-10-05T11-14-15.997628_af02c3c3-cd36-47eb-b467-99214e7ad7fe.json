@@ -1,0 +1,70 @@
+{
+  "patch_id": "af02c3c3-cd36-47eb-b467-99214e7ad7fe",
+  "timestamp": "2025-10-05T11:14:15.997628",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://85186188251021": {
+        "status": "modified",
+        "changes": {
+          "imxd": {
+            "from": 140,
+            "to": 204
+          }
+        }
+      },
+      "rbxassetid://110164806111956": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "WeaponFlourishTest",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 12,
+                "X": 12,
+                "Z": 12
+              },
+              "when": 300,
+              "ihbc": false
+            }
+          ],
+          "pfh": false,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://110164806111956",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "AuthortyPunchFloruish",
+          "imxd": 204,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

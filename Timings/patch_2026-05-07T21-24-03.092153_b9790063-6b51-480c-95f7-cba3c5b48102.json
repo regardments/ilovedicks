@@ -1,0 +1,160 @@
+{
+  "patch_id": "b9790063-6b51-480c-95f7-cba3c5b48102",
+  "timestamp": "2026-05-07T21:24:03.092153",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://9597289518": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.5,
+            "to": 0.25
+          },
+          "phds": {
+            "from": 0.6,
+            "to": 0.25
+          },
+          "dp": {
+            "from": false,
+            "to": true
+          },
+          "pfh": {
+            "from": true,
+            "to": false
+          },
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "hso": {
+            "from": 0,
+            "to": -5
+          },
+          "nvfb": {
+            "from": false,
+            "to": true
+          },
+          "bfht": {
+            "from": 0.3,
+            "to": 0.6
+          },
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      },
+      "rbxassetid://7391446645": {
+        "status": "modified",
+        "changes": {
+          "ha": {
+            "from": false,
+            "to": true
+          },
+          "nbfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://6063195211": {
+        "status": "modified",
+        "changes": {
+          "hso": {
+            "from": 3,
+            "to": -5
+          },
+          "bfht": {
+            "from": 0.5,
+            "to": 0.6
+          },
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      },
+      "rbxassetid://6063188218": {
+        "status": "modified",
+        "changes": {
+          "hso": {
+            "from": 3,
+            "to": -5
+          },
+          "bfht": {
+            "from": 0.5,
+            "to": 0.6
+          },
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      },
+      "rbxassetid://6675703249": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.2,
+            "to": 0.6
+          },
+          "dp": {
+            "from": true,
+            "to": false
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          },
+          "phd": {
+            "from": true,
+            "to": false
+          },
+          "hso": {
+            "from": 3,
+            "to": -5
+          },
+          "bfht": {
+            "from": 0.5,
+            "to": 0.3
+          },
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      },
+      "rbxassetid://7616407967": {
+        "status": "modified",
+        "changes": {
+          "hso": {
+            "from": 3,
+            "to": -5
+          },
+          "bfht": {
+            "from": 0.5,
+            "to": 0.6
+          },
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      },
+      "rbxassetid://7827886914": {
+        "status": "modified",
+        "changes": {
+          "ha": {
+            "from": false,
+            "to": true
+          },
+          "nbfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

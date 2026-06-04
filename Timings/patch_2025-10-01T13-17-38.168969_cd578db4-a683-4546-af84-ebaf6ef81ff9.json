@@ -1,0 +1,13 @@
+{
+  "patch_id": "cd578db4-a683-4546-af84-ebaf6ef81ff9",
+  "timestamp": "2025-10-01T13:17:38.168969",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "bonefall": {
+        "status": "removed",
+        "name": "BrachialSpear"
+      }
+    }
+  }
+}

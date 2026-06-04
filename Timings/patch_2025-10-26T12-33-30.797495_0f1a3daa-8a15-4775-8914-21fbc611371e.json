@@ -1,0 +1,1399 @@
+{
+  "patch_id": "0f1a3daa-8a15-4775-8914-21fbc611371e",
+  "timestamp": "2025-10-26T12:33:30.797495",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://8161043368": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://8161044711": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://14435773739": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://16372476897": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://8161094751": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://6675703249": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.35,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://11959603858": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 14,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 1000,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 14,
+                  "X": 16,
+                  "Z": 16
+                },
+                "when": 900,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "rbxassetid://5950080662": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://14435770311": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://5778357994": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 104,
+              "X": 104,
+              "Z": 104
+            },
+            "to": {
+              "Y": 32,
+              "X": 32,
+              "Z": 32
+            }
+          }
+        }
+      },
+      "rbxassetid://8278933540": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://123115833203242": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://6607538047": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://11328614766": {
+        "status": "modified",
+        "changes": {
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "Release",
+                "hitbox": {
+                  "Y": 27,
+                  "X": 27,
+                  "Z": 27
+                },
+                "when": 450,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "Release",
+                "hitbox": {
+                  "Y": 300,
+                  "X": 300,
+                  "Z": 300
+                },
+                "when": 450,
+                "ihbc": false
+              }
+            ]
+          },
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      },
+      "rbxassetid://9930447958": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://85186188251021": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://6466993564": {
+        "status": "modified",
+        "changes": {
+          "iae": {
+            "from": true,
+            "to": false
+          },
+          "hitbox": {
+            "from": {
+              "Y": 20,
+              "X": 20,
+              "Z": 21
+            },
+            "to": {
+              "Y": 20,
+              "X": 10,
+              "Z": 21
+            }
+          },
+          "rpue": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://5064195992": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7600450739": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://13241958217": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "phds": {
+            "from": 0,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://82342705344145": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://88620745767944": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://9928485641": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://99450771029342": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://137565901647190": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://13242083070": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "phds": {
+            "from": 0,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://16372479940": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://123456225328134": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://131576892263777": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://6607519294": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://9400896040": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 18,
+              "X": 18,
+              "Z": 18
+            },
+            "to": {
+              "Y": 18,
+              "X": 18,
+              "Z": 16
+            }
+          }
+        }
+      },
+      "rbxassetid://17108040817": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://138417702895229": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://5063313656": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://7600485223": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://14435766591": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://107653610777693": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://16372478422": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://9928429385": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7616407967": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://9422599069": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 14,
+                  "Z": 11
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 14,
+                  "Z": 14
+                },
+                "when": 350,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "rbxassetid://5953326460": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 25,
+              "X": 25,
+              "Z": 25
+            },
+            "to": {
+              "Y": 25,
+              "X": 40,
+              "Z": 40
+            }
+          }
+        }
+      },
+      "rbxassetid://16873988732": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 20,
+              "X": 20,
+              "Z": 33
+            },
+            "to": {
+              "Y": 20,
+              "X": 20,
+              "Z": 15
+            }
+          },
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "Lololololo",
+                "hitbox": {
+                  "Y": 18,
+                  "X": 18,
+                  "Z": 25
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "Lololololo",
+                "hitbox": {
+                  "Y": 0,
+                  "X": 0,
+                  "Z": 0
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "rbxassetid://8367730650": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://110164806111956": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://11887901212": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://8018953639": {
+        "status": "modified",
+        "changes": {
+          "fhb": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://5067090007": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://6437665734": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://6063195211": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://14435778571": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://9832721746": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://106858298622632": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://5067105317": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://74422917176963": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://95071929775027": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.5000000596046448
+          }
+        }
+      },
+      "rbxassetid://7600160919": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7627854272": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://6432920452": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7627558238": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://12706574441": {
+        "status": "modified",
+        "changes": {
+          "duih": {
+            "from": true,
+            "to": false
+          },
+          "umoa": {
+            "from": true,
+            "to": false
+          },
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 0,
+                  "X": 0,
+                  "Z": 0
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 60,
+                  "X": 60,
+                  "Z": 60
+                },
+                "when": 600,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "rbxassetid://12106093579": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://11887938902": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://14435763579": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7627372304": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7627889074": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://8375086403": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.034,
+            "to": 0.25
+          },
+          "hso": {
+            "from": -8,
+            "to": 0
+          },
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 24,
+                  "Z": 24
+                },
+                "when": 350,
+                "ihbc": false
+              },
+              {
+                "_type": "Parry",
+                "name": "2",
+                "hitbox": {
+                  "Y": 18,
+                  "X": 28,
+                  "Z": 28
+                },
+                "when": 650,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 15,
+                  "X": 25,
+                  "Z": 25
+                },
+                "when": 350,
+                "ihbc": false
+              },
+              {
+                "_type": "Parry",
+                "name": "2",
+                "hitbox": {
+                  "Y": 18,
+                  "X": 20,
+                  "Z": 20
+                },
+                "when": 800,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "rbxassetid://7626771915": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7600224169": {
+        "status": "modified",
+        "changes": {
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://17197704130": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.353,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://8467835626": {
+        "status": "modified",
+        "changes": {
+          "iae": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://102858834757078": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.35,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://8198492537": {
+        "status": "modified",
+        "changes": {
+          "phd": {
+            "from": false,
+            "to": true
+          },
+          "phds": {
+            "from": 0,
+            "to": 0.18
+          }
+        }
+      },
+      "rbxassetid://94626092299428": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://9832724876": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://8161039359": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://12106091136": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7576748728": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.5000000596046448,
+            "to": 0.5
+          }
+        }
+      },
+      "rbxassetid://6675698010": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.35,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://17197732174": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.353,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://11887876811": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://8249175106": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.35,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://17197593993": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.353,
+            "to": 0.3
+          }
+        }
+      },
+      "rbxassetid://6063188218": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://122256431354649": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://121003629056681": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.15,
+            "to": 0.3
+          },
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://8265980703": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 14,
+              "X": 16,
+              "Z": 20
+            },
+            "to": {
+              "Y": 14,
+              "X": 10,
+              "Z": 15
+            }
+          },
+          "umoa": {
+            "from": true,
+            "to": false
+          },
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 0,
+                  "X": 0,
+                  "Z": 0
+                },
+                "when": 400,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "rbxassetid://8249177669": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.35,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      },
+      "rbxassetid://7627049402": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.207,
+            "to": 0.3
+          },
+          "phds": {
+            "from": 0.21,
+            "to": 1
+          }
+        }
+      }
+    },
+    "part": {
+      "ImpactIndicator": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 20,
+                  "X": 21,
+                  "Z": 21
+                },
+                "when": 600,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 20,
+                  "X": 21,
+                  "Z": 21
+                },
+                "when": 500,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "IceBird": {
+        "status": "added",
+        "data": {
+          "umoa": false,
+          "pname": "IceBird",
+          "smod": "N/A",
+          "hso": 0,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 0,
+                "X": 0,
+                "Z": 0
+              },
+              "when": 0,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "after": 0,
+          "uhc": true,
+          "duih": true,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 7,
+            "X": 7,
+            "Z": 31
+          },
+          "punishable": 0,
+          "name": "IceBird",
+          "imxd": 86,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "SmiteBall2": {
+        "status": "added",
+        "data": {
+          "umoa": true,
+          "pname": "SmiteBall2",
+          "smod": "Smite",
+          "hso": 0,
+          "actions": [],
+          "ndfb": false,
+          "after": 0,
+          "uhc": false,
+          "duih": true,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 2,
+            "X": 2,
+            "Z": 2
+          },
+          "punishable": 0,
+          "name": "SmiteBall2",
+          "imxd": 118,
+          "smn": false,
+          "fhb": false,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

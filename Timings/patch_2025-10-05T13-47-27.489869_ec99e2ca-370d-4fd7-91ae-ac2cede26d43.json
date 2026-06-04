@@ -1,0 +1,53 @@
+{
+  "patch_id": "ec99e2ca-370d-4fd7-91ae-ac2cede26d43",
+  "timestamp": "2025-10-05T13:47:27.489869",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://6415074870": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "ShadowGun",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": true,
+          "ndfb": false,
+          "duih": true,
+          "after": 0,
+          "_id": "rbxassetid://6415074870",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 10,
+            "X": 10,
+            "Z": 20
+          },
+          "punishable": 0,
+          "name": "ShadowGunWindup",
+          "imxd": 75,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Mantra"
+        }
+      },
+      "rbxassetid://6415085564": {
+        "status": "removed",
+        "name": "ShadowGun"
+      }
+    }
+  }
+}

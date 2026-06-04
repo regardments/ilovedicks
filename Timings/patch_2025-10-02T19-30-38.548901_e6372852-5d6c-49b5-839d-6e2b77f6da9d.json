@@ -1,0 +1,30 @@
+{
+  "patch_id": "e6372852-5d6c-49b5-839d-6e2b77f6da9d",
+  "timestamp": "2025-10-02T19:30:38.548901",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "LightningMote": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 43,
+              "X": 42,
+              "Z": 49
+            },
+            "to": {
+              "Y": 20,
+              "X": 20,
+              "Z": 20
+            }
+          },
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      }
+    }
+  }
+}

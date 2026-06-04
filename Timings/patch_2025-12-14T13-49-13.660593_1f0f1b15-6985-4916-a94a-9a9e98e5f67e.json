@@ -1,0 +1,86 @@
+{
+  "patch_id": "1f0f1b15-6985-4916-a94a-9a9e98e5f67e",
+  "timestamp": "2025-12-14T13:49:13.660593",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://139374497695456": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "Release",
+              "hitbox": {
+                "Y": 20,
+                "X": 15,
+                "Z": 15
+              },
+              "when": 300,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "3",
+              "hitbox": {
+                "Y": 20,
+                "X": 15,
+                "Z": 15
+              },
+              "when": 1780,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "2",
+              "hitbox": {
+                "Y": 20,
+                "X": 15,
+                "Z": 15
+              },
+              "when": 800,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://139374497695456",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "SquidwardTriple",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": true,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": false,
+          "imxd": 75,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

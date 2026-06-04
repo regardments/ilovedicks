@@ -1,0 +1,52 @@
+{
+  "patch_id": "18a5c247-256c-4a13-aed4-9e2b015ddbba",
+  "timestamp": "2025-12-14T15:32:03.041057",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://70906009312691": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://70906009312691",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "ENMITYSLASHLEAP",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": true,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": false,
+          "imxd": 528,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

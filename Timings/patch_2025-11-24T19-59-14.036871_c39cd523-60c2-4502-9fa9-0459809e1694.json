@@ -1,0 +1,62 @@
+{
+  "patch_id": "c39cd523-60c2-4502-9fa9-0459809e1694",
+  "timestamp": "2025-11-24T19:59:14.036871",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "EruptionPart": {
+        "status": "added",
+        "data": {
+          "umoa": false,
+          "pname": "EruptionPart",
+          "smod": "N/A",
+          "hso": 0,
+          "bfht": 0.3,
+          "actions": [
+            {
+              "_type": "Start Block",
+              "name": "1",
+              "hitbox": {
+                "Y": 32,
+                "X": 31,
+                "Z": 31
+              },
+              "when": 100,
+              "ihbc": false
+            },
+            {
+              "_type": "End Block",
+              "name": "2",
+              "hitbox": {
+                "Y": 32,
+                "X": 31,
+                "Z": 31
+              },
+              "when": 2000,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "after": 0,
+          "uhc": false,
+          "nvfb": false,
+          "duih": true,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 40,
+            "X": 40,
+            "Z": 40
+          },
+          "punishable": 0,
+          "name": "Tornado",
+          "imxd": 129,
+          "smn": false,
+          "fhb": false,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

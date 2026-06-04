@@ -1,0 +1,34 @@
+{
+  "patch_id": "f0074965-b482-413e-89d9-0d1f1c946cfc",
+  "timestamp": "2025-11-22T19:15:16.116637",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "EruptPlacement": {
+        "status": "modified",
+        "changes": {
+          "fhb": {
+            "from": true,
+            "to": false
+          },
+          "actions": {
+            "from": [],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 0,
+                  "X": 0,
+                  "Z": 0
+                },
+                "when": 0,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

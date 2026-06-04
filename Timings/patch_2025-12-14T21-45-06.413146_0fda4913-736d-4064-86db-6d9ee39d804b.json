@@ -1,0 +1,88 @@
+{
+  "patch_id": "0fda4913-736d-4064-86db-6d9ee39d804b",
+  "timestamp": "2025-12-14T21:45:06.413146",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://74575549085897": {
+        "status": "modified",
+        "changes": {
+          "ha": {
+            "from": false,
+            "to": true
+          },
+          "nbfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://72259757199810": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Dodge",
+                "name": "1",
+                "hitbox": {
+                  "Y": 300,
+                  "X": 300,
+                  "Z": 300
+                },
+                "when": 120,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 300,
+                  "X": 300,
+                  "Z": 300
+                },
+                "when": 120,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      },
+      "rbxassetid://123267446325415": {
+        "status": "modified",
+        "changes": {
+          "actions": {
+            "from": [
+              {
+                "_type": "Dodge",
+                "name": "1",
+                "hitbox": {
+                  "Y": 300,
+                  "X": 300,
+                  "Z": 300
+                },
+                "when": 150,
+                "ihbc": false
+              }
+            ],
+            "to": [
+              {
+                "_type": "Parry",
+                "name": "1",
+                "hitbox": {
+                  "Y": 300,
+                  "X": 300,
+                  "Z": 300
+                },
+                "when": 150,
+                "ihbc": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

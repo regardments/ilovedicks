@@ -1,0 +1,88 @@
+{
+  "patch_id": "271be26d-6058-4a18-91b8-fcfb19c4d7de",
+  "timestamp": "2025-10-20T15:29:36.207047",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://7600450739": {
+        "status": "modified",
+        "changes": {
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://81791470214091": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": false,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "N/A",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 0,
+                "X": 32,
+                "Z": 31
+              },
+              "when": 0,
+              "ihbc": false
+            }
+          ],
+          "pfh": false,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://81791470214091",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "RiteCritSlam",
+          "imxd": 64,
+          "smn": false,
+          "fhb": false,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://7576748728": {
+        "status": "modified",
+        "changes": {
+          "pfht": {
+            "from": 0.5,
+            "to": 0.5000000596046448
+          }
+        }
+      },
+      "rbxassetid://7600485223": {
+        "status": "modified",
+        "changes": {
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

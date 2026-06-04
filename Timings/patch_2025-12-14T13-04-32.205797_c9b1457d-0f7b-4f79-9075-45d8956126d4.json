@@ -1,0 +1,86 @@
+{
+  "patch_id": "c9b1457d-0f7b-4f79-9075-45d8956126d4",
+  "timestamp": "2025-12-14T13:04:32.205797",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://72537613591894": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 31,
+                "X": 31,
+                "Z": 33
+              },
+              "when": 575,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "3",
+              "hitbox": {
+                "Y": 31,
+                "X": 31,
+                "Z": 33
+              },
+              "when": 1280,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "2",
+              "hitbox": {
+                "Y": 31,
+                "X": 31,
+                "Z": 33
+              },
+              "when": 1280,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://72537613591894",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "RatKingTPCombo",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": true,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": true,
+          "imxd": 226,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

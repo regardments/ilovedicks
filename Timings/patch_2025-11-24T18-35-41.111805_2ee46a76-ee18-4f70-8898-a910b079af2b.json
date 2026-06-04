@@ -1,0 +1,13 @@
+{
+  "patch_id": "2ee46a76-ee18-4f70-8898-a910b079af2b",
+  "timestamp": "2025-11-24T18:35:41.111805",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://15447482694": {
+        "status": "removed",
+        "name": "Backstab"
+      }
+    }
+  }
+}

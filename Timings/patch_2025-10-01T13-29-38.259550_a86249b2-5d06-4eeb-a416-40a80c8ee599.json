@@ -1,0 +1,26 @@
+{
+  "patch_id": "a86249b2-5d06-4eeb-a416-40a80c8ee599",
+  "timestamp": "2025-10-01T13:29:38.259550",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "WaterComing": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 12,
+              "X": 6,
+              "Z": 6
+            },
+            "to": {
+              "Y": 12,
+              "X": 11,
+              "Z": 11
+            }
+          }
+        }
+      }
+    }
+  }
+}

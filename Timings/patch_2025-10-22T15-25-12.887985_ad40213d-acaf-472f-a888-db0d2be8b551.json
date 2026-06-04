@@ -1,0 +1,37 @@
+{
+  "patch_id": "ad40213d-acaf-472f-a888-db0d2be8b551",
+  "timestamp": "2025-10-22T15:25:12.887985",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "GazeBox": {
+        "status": "added",
+        "data": {
+          "umoa": false,
+          "pname": "GazeBox",
+          "smod": "N/A",
+          "hso": 0,
+          "actions": [],
+          "ndfb": false,
+          "after": 0,
+          "uhc": false,
+          "duih": false,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "Gaze",
+          "imxd": 86,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

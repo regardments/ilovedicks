@@ -1,0 +1,113 @@
+{
+  "patch_id": "ee45f72c-fd49-4865-9be2-7250fc488475",
+  "timestamp": "2025-10-01T21:08:45.936406",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://7612564657": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": false,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "N/A",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 10,
+                "X": 10,
+                "Z": 15
+              },
+              "when": 100,
+              "ihbc": false
+            }
+          ],
+          "pfh": false,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://7612564657",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "IceSaber3",
+          "imxd": 86,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      },
+      "rbxassetid://7612146010": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": false,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "N/A",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 10,
+                "X": 10,
+                "Z": 15
+              },
+              "when": 100,
+              "ihbc": false
+            }
+          ],
+          "pfh": false,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://7612146010",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "IceSaber2",
+          "imxd": 86,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

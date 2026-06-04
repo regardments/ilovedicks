@@ -1,0 +1,18 @@
+{
+  "patch_id": "13c9681b-2b43-4338-a907-de86f5436736",
+  "timestamp": "2025-10-02T19:50:38.356070",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "StrikeIndicator": {
+        "status": "modified",
+        "changes": {
+          "fhb": {
+            "from": true,
+            "to": false
+          }
+        }
+      }
+    }
+  }
+}

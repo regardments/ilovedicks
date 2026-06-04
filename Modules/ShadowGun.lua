@@ -1,0 +1,32 @@
+---@class Action
+local Action = getfenv().Action
+
+---@module Modules.Globals.Mantra
+local Mantra = getfenv().Mantra
+
+---Module function.
+---@param self AnimatorDefender
+---@param timing AnimationTiming
+return function(self, timing)
+	local data = Mantra.data(self.entity, "Mantra:GunShadow{{Shadow Gun}}")
+	local range = data.perfect * 7 + data.crystal * 5
+	local size = data.stratus * 0.4 + data.cloud * 0.3
+
+	local action = Action.new()
+	action._when = (100 * 1.02)
+	action._type = "Parry"
+	action.hitbox = Vector3.new(20 + size, 20 + size, 50 + range)
+	action.name = "Dynamic Shadow Gun Timing"
+
+	if data.blast then
+		action.hitbox = Vector3.new(action.hitbox.X * 2.5, action.hitbox.Y * 2.5, action.hitbox.Z)
+	end
+
+	timing.iae = true
+	timing.ieae = true
+	timing.duih = false
+	timing.mat = 1000
+	timing.ffh = true
+
+	self:action(timing, action)
+end

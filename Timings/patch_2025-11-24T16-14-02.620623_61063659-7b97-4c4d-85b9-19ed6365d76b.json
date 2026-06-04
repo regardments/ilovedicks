@@ -1,0 +1,18 @@
+{
+  "patch_id": "61063659-7b97-4c4d-85b9-19ed6365d76b",
+  "timestamp": "2025-11-24T16:14:02.620623",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "WindProjectile": {
+        "status": "modified",
+        "changes": {
+          "uhc": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

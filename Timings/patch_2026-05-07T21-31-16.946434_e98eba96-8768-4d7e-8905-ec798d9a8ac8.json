@@ -1,0 +1,33 @@
+{
+  "patch_id": "e98eba96-8768-4d7e-8905-ec798d9a8ac8",
+  "timestamp": "2026-05-07T21:31:16.946434",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://13989464729": {
+        "status": "modified",
+        "changes": {
+          "ha": {
+            "from": false,
+            "to": true
+          },
+          "nbfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    },
+    "part": {
+      "IceDagger": {
+        "status": "modified",
+        "changes": {
+          "ndfb": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

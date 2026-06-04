@@ -1,0 +1,13 @@
+{
+  "patch_id": "1a9f2f2a-e7af-4d80-ba2f-aebf0c211ee6",
+  "timestamp": "2025-10-22T15:26:12.905132",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "GazeBox": {
+        "status": "removed",
+        "name": "Gaze"
+      }
+    }
+  }
+}

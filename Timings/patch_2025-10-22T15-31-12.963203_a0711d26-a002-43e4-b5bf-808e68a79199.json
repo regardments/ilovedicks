@@ -1,0 +1,58 @@
+{
+  "patch_id": "a0711d26-a002-43e4-b5bf-808e68a79199",
+  "timestamp": "2025-10-22T15:31:12.963203",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://5773977536": {
+        "status": "modified",
+        "changes": {
+          "pfh": {
+            "from": false,
+            "to": true
+          }
+        }
+      },
+      "rbxassetid://5769290839": {
+        "status": "added",
+        "data": {
+          "phd": false,
+          "umoa": true,
+          "imb": false,
+          "dp": false,
+          "rpd": 0,
+          "pfht": 0.15,
+          "smod": "Gaze",
+          "hso": 0,
+          "aatk": false,
+          "rsd": 0,
+          "ieae": false,
+          "iae": false,
+          "ha": false,
+          "actions": [],
+          "pfh": true,
+          "ndfb": false,
+          "duih": false,
+          "after": 0,
+          "_id": "rbxassetid://5769290839",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "phds": 0,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "Gaze",
+          "imxd": 96,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

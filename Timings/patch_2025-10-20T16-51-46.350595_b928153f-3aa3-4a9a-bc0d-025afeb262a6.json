@@ -1,0 +1,30 @@
+{
+  "patch_id": "b928153f-3aa3-4a9a-bc0d-025afeb262a6",
+  "timestamp": "2025-10-20T16:51:46.350595",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "WindKickBrick": {
+        "status": "modified",
+        "changes": {
+          "fhb": {
+            "from": true,
+            "to": false
+          },
+          "hitbox": {
+            "from": {
+              "Y": 10,
+              "X": 10,
+              "Z": 46
+            },
+            "to": {
+              "Y": 46,
+              "X": 15,
+              "Z": 46
+            }
+          }
+        }
+      }
+    }
+  }
+}

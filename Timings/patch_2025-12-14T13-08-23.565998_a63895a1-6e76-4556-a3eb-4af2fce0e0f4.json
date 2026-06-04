@@ -1,0 +1,75 @@
+{
+  "patch_id": "a63895a1-6e76-4556-a3eb-4af2fce0e0f4",
+  "timestamp": "2025-12-14T13:08:23.565998",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://94401200412230": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": 0,
+          "ieae": false,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 51,
+                "X": 50,
+                "Z": 51
+              },
+              "when": 180,
+              "ihbc": false
+            },
+            {
+              "_type": "Parry",
+              "name": "2",
+              "hitbox": {
+                "Y": 51,
+                "X": 50,
+                "Z": 51
+              },
+              "when": 1050,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://94401200412230",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "RatKingStabSlash",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": true,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": false,
+          "smod": "N/A",
+          "bfht": 0.3,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": false,
+          "pfht": 0.15,
+          "phds": 0,
+          "phd": false,
+          "aatk": false,
+          "nvfb": false,
+          "smn": false,
+          "iae": false,
+          "ha": true,
+          "imxd": 312,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

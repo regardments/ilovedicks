@@ -1,0 +1,13 @@
+{
+  "patch_id": "b3c441d0-6c55-401b-9a8e-d93b26d8a85b",
+  "timestamp": "2025-10-20T17:10:15.714991",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "IceDagger": {
+        "status": "removed",
+        "name": "IceDagger"
+      }
+    }
+  }
+}

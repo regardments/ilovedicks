@@ -1,0 +1,51 @@
+{
+  "patch_id": "e0f84149-7346-4c26-a72b-cd7af3f3e4c9",
+  "timestamp": "2025-11-24T16:13:02.153755",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "WindProjectile": {
+        "status": "added",
+        "data": {
+          "umoa": false,
+          "pname": "WindProjectile",
+          "smod": "N/A",
+          "hso": 0,
+          "bfht": 0.3,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "1",
+              "hitbox": {
+                "Y": 0,
+                "X": 0,
+                "Z": 0
+              },
+              "when": 0,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "after": 0,
+          "uhc": false,
+          "nvfb": false,
+          "duih": true,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 20,
+            "X": 20,
+            "Z": 20
+          },
+          "punishable": 0,
+          "name": "WindProjectile",
+          "imxd": 0,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

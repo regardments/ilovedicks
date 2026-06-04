@@ -1,0 +1,54 @@
+{
+  "patch_id": "c01033b3-c51f-46b3-88fa-114f07ad1343",
+  "timestamp": "2025-10-01T15:58:02.611031",
+  "author": "Juanito",
+  "diff": {
+    "animation": {
+      "rbxassetid://6669352471": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 17,
+              "X": 14.875,
+              "Z": 21.25
+            },
+            "to": {
+              "Y": 17,
+              "X": 8.000000953674316,
+              "Z": 16.000001907348633
+            }
+          }
+        }
+      },
+      "rbxassetid://11363599835": {
+        "status": "modified",
+        "changes": {
+          "hitbox": {
+            "from": {
+              "Y": 17,
+              "X": 14.875,
+              "Z": 17
+            },
+            "to": {
+              "Y": 17,
+              "X": 8.000000953674316,
+              "Z": 17
+            }
+          }
+        }
+      }
+    },
+    "part": {
+      "Rock": {
+        "status": "modified",
+        "changes": {
+          "uhc": {
+            "from": false,
+            "to": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "patch_id": "1e647490-9cbc-4bb0-8271-ce4caf2e7ab3",
+  "timestamp": "2025-12-14T01:35:32.401487",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://139109176874463": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": -5,
+          "ieae": false,
+          "actions": [],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://139109176874463",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "1_GenericUntrainedFist1",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": false,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": true,
+          "smod": "WeaponTest",
+          "bfht": 0.6,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": true,
+          "pfht": 0.2500000298023224,
+          "phds": 0.6,
+          "phd": true,
+          "aatk": false,
+          "nvfb": true,
+          "smn": false,
+          "iae": false,
+          "ha": false,
+          "imxd": 107,
+          "tag": "M1"
+        }
+      },
+      "rbxassetid://81374297342678": {
+        "status": "added",
+        "data": {
+          "rpd": 0,
+          "hso": -5,
+          "ieae": false,
+          "actions": [],
+          "ndfb": false,
+          "nbfb": false,
+          "_id": "rbxassetid://81374297342678",
+          "mat": 2000,
+          "rpue": false,
+          "srpn": false,
+          "punishable": 0,
+          "name": "1_GenericUntrainedFist2",
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "fhb": false,
+          "imdd": 0,
+          "duih": false,
+          "rsd": 0,
+          "umoa": true,
+          "smod": "WeaponTest",
+          "bfht": 0.6,
+          "pfh": false,
+          "after": 0,
+          "imb": false,
+          "dp": true,
+          "pfht": 0.2500000298023224,
+          "phds": 0.6,
+          "phd": true,
+          "aatk": false,
+          "nvfb": true,
+          "smn": false,
+          "iae": false,
+          "ha": false,
+          "imxd": 107,
+          "tag": "M1"
+        }
+      }
+    }
+  }
+}

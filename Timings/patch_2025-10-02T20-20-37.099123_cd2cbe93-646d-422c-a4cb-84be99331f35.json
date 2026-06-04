@@ -1,0 +1,18 @@
+{
+  "patch_id": "cd2cbe93-646d-422c-a4cb-84be99331f35",
+  "timestamp": "2025-10-02T20:20:37.099123",
+  "author": "Blastbrean",
+  "diff": {
+    "animation": {
+      "rbxassetid://4699358112": {
+        "status": "modified",
+        "changes": {
+          "smod": {
+            "from": "RunningAttack",
+            "to": "WeaponRunningAttackTest"
+          }
+        }
+      }
+    }
+  }
+}

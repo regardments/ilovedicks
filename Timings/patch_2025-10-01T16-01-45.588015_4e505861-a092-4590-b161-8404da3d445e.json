@@ -1,0 +1,18 @@
+{
+  "patch_id": "4e505861-a092-4590-b161-8404da3d445e",
+  "timestamp": "2025-10-01T16:01:45.588015",
+  "author": "Juanito",
+  "diff": {
+    "part": {
+      "Rock": {
+        "status": "modified",
+        "changes": {
+          "imxd": {
+            "from": 118,
+            "to": 0
+          }
+        }
+      }
+    }
+  }
+}

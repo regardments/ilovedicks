@@ -1,0 +1,49 @@
+{
+  "patch_id": "f8770a98-e49d-4b4a-aa04-b243bd17b5e2",
+  "timestamp": "2025-10-02T19:49:48.464570",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "StrikeIndicator": {
+        "status": "added",
+        "data": {
+          "umoa": false,
+          "pname": "StrikeIndicator",
+          "smod": "N/A",
+          "hso": 0,
+          "actions": [
+            {
+              "_type": "Parry",
+              "name": "Release",
+              "hitbox": {
+                "Y": 0,
+                "X": 0,
+                "Z": 11
+              },
+              "when": 0,
+              "ihbc": false
+            }
+          ],
+          "ndfb": false,
+          "after": 0,
+          "uhc": false,
+          "duih": false,
+          "srpn": false,
+          "aatk": false,
+          "hitbox": {
+            "Y": 0,
+            "X": 0,
+            "Z": 0
+          },
+          "punishable": 0,
+          "name": "LightningStrike",
+          "imxd": 75,
+          "smn": false,
+          "fhb": true,
+          "imdd": 0,
+          "tag": "Undefined"
+        }
+      }
+    }
+  }
+}

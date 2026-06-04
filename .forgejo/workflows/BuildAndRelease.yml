@@ -1,0 +1,153 @@
+name: Build & Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag, e.g. v1.0.0"
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: docker
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+          token: ${{ secrets.RELEASE_TOKEN }}
+
+      - name: Resolve release tag
+        id: vars
+        run: |
+          echo "tag=${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
+
+      - name: Validate tag
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          if [[ ! "$TAG" =~ ^v.+ ]]; then
+            echo "Tag must start with v, for example v1.0.0"
+            exit 1
+          fi
+
+      - name: Patch menu version
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          VERSION="${TAG#v}"
+          export VERSION
+
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          import re
+
+          version = os.environ["VERSION"]
+          path = Path("Menu.lua")
+          source = path.read_text()
+          source = re.sub(r'local VERSION = "[^"]+"', f'local VERSION = "{version}"', source, count=1)
+          path.write_text(source)
+          PY
+
+      - name: Commit version patch
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          git config user.name "forgejo-actions"
+          git config user.email "forgejo-actions@git.blastbrean.com"
+
+          if git diff --quiet; then
+            echo "No version changes to commit"
+          else
+            git add Menu.lua
+            git commit -m "Release $TAG"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+
+      - name: Create tag if missing
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          git fetch --tags
+
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists"
+          else
+            git tag "$TAG"
+            git push origin "$TAG"
+          fi
+
+      - name: Generate release notes
+        run: |
+          TAG="${{ steps.vars.outputs.tag }}"
+          mkdir -p dist/release
+
+          PREV_TAG="$(git tag --sort=-creatordate | grep -v "^$TAG$" | head -n 1 || true)"
+
+          {
+            echo "## $TAG"
+            echo
+
+            if [ -n "$PREV_TAG" ]; then
+              echo "Changes since $PREV_TAG:"
+              echo
+              git log "$PREV_TAG..$TAG" --pretty=format:"- %s (%h)"
+            else
+              echo "Changes:"
+              echo
+              git log "$TAG" --pretty=format:"- %s (%h)"
+            fi
+          } > dist/release/RELEASE_NOTES.md
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install luabundler
+        run: npm install -g luabundler
+
+      - name: Patch luaparse.js
+        run: |
+          LUAPARSE_PATH="$(npm root -g)/luabundler/node_modules/moonsharp-luaparse/luaparse.js"
+          echo "Patching: $LUAPARSE_PATH"
+          cp luaparse.js "$LUAPARSE_PATH"
+
+      - name: Bundle
+        run: luabundler bundle Main.lua -p "./?.lua" -o Output/Bundled.lua -l 5.1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Python dependencies
+        run: pip install msgpack
+
+      - name: Generate truth.txt
+        run: python GenerateTruth.py
+
+      - name: Run Preprocessor
+        run: python Preprocessor.py
+
+      - name: Verify output files
+        run: |
+          test -f Output/Bundled.lua
+          test -f Output/Preprocessed_Bundled.lua
+
+      - name: Prepare release files
+        run: |
+          cp Output/Bundled.lua dist/release/
+          cp Output/Preprocessed_Bundled.lua dist/release/
+
+      - name: Create Forgejo Release
+        uses: actions/forgejo-release@v2.11.1
+        with:
+          direction: upload
+          url: https://git.blastbrean.com
+          repo: lycoris/deepwoken-rewrite
+          tag: ${{ steps.vars.outputs.tag }}
+          token: ${{ secrets.RELEASE_TOKEN }}
+          release-dir: dist/release
+          release-notes-file: dist/release/RELEASE_NOTES.md
+          override: true

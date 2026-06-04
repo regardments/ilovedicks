@@ -1,0 +1,13 @@
+{
+  "patch_id": "d4b01ca5-6939-47cd-9f8f-29aeecb9feb6",
+  "timestamp": "2025-11-24T19:58:03.717694",
+  "author": "Blastbrean",
+  "diff": {
+    "part": {
+      "EruptionPart": {
+        "status": "removed",
+        "name": "Tornado"
+      }
+    }
+  }
+}
