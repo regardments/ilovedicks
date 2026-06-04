@@ -7,6 +7,9 @@ local Logger = require("Utility/Logger")
 ---@module Features.Combat.Defense
 local Defense = require("Features/Combat/Defense")
 
+---@module Features.Combat.APBreaker
+local APBreaker = require("Features/Combat/APBreaker")
+
 ---@module Utility.Configuration
 local Configuration = require("Utility/Configuration")
 
@@ -395,7 +398,6 @@ function CombatTab:initTimingsSection(groupbox)
 	local names = {}
 	local plist = { SaveManager.as, SaveManager.es, SaveManager.ss, SaveManager.ps }
 
-	---@todo: There should be a specific method for this; I mean as far as I'm aware THERE IS ONE. But, I'm too lazy.
 	for _, pair in next, plist do
 		for _, timing in next, pair:list() do
 			names[#names + 1] = timing.name
@@ -416,7 +418,6 @@ function CombatTab:initTimingsSection(groupbox)
 			return Logger.notify("A timing override with that name already exists.")
 		end
 
-		-- Add data.
 		local override = {
 			fr = self.failureRate.Value,
 			dipr = self.dashInsteadOfParryRate.Value,
@@ -425,27 +426,21 @@ function CombatTab:initTimingsSection(groupbox)
 
 		Library.OverrideData[self.ti.Value] = override
 
-		-- Refresh timing list.
 		refreshTimingOverrideList()
 
-		-- Set timing list value.
 		self.tol:SetValue(self.ti.Value)
 		self.tol:Display()
 	end)
 
 	groupbox:AddButton("Remove Selected Override", function()
-		-- Remove data.
 		Library.OverrideData[self.tol.Value] = nil
 
-		-- Refresh timing list.
 		refreshTimingOverrideList()
 
-		-- Set timing list value.
 		self.tol:SetValue(nil)
 		self.tol:Display()
 	end)
 
-	-- Initial refresh.
 	refreshTimingOverrideList()
 end
 
@@ -489,7 +484,7 @@ function CombatTab:initProbabilitiesSection(groupbox)
 	})
 end
 
----Initialize attack assistance section.
+-- Initialize attack assistance section.
 ---@param groupbox table
 function CombatTab.initAttackAssistanceSection(groupbox)
 	local afToggle = groupbox:AddToggle("AutoFeint", {
@@ -514,7 +509,7 @@ function CombatTab.initAttackAssistanceSection(groupbox)
 	})
 end
 
----Initialize combat assistance section.
+-- Initialize combat assistance section.
 ---@param groupbox table
 function CombatTab.initCombatAssistance(groupbox)
 	local awToggle = groupbox:AddToggle("AutoWisp", {
@@ -691,6 +686,88 @@ function CombatTab.initCombatAssistance(groupbox)
 		{ arToggle, true },
 	})
 
+	-- ========== AP BREAKER SECTION ==========
+	local apBreakerToggle = groupbox:AddToggle("APBreaker", {
+		Text = "AP Breaker",
+		Tooltip = "Ejecuta animaciones a alta velocidad para romper el Auto Parry (AP) enemigo.",
+		Default = false,
+		Callback = function(state)
+			if state then
+				local burstMode = Configuration.expectToggleValue("APBreakerBurstMode")
+				local intensity = Configuration.expectOptionValue("APBreakerIntensity") or 5
+				APBreaker.start(burstMode, intensity)
+			else
+				APBreaker.stop()
+			end
+		end
+	})
+
+	apBreakerToggle:AddKeyPicker("APBreakerKeybind", {
+		Default = "N/A",
+		SyncToggleState = true,
+		Text = "AP Breaker"
+	})
+
+	local apDepBox = groupbox:AddDependencyBox()
+
+	local burstModeToggle = apDepBox:AddToggle("APBreakerBurstMode", {
+		Text = "Burst Mode",
+		Tooltip = "Modo más agresivo que ejecuta animaciones a intensidad máxima por 3 segundos.",
+		Default = false,
+		Callback = function(state)
+			if Toggles.APBreaker and Toggles.APBreaker.Value then
+				if state then
+					APBreaker.start(true, Configuration.expectOptionValue("APBreakerIntensity") or 5)
+				else
+					APBreaker.start(false)
+				end
+			end
+		end
+	})
+
+	apDepBox:AddSlider("APBreakerIntensity", {
+		Text = "Burst Intensity",
+		Default = 5,
+		Min = 2,
+		Max = 20,
+		Suffix = "x",
+		Rounding = 0,
+		Callback = function(value)
+			if Toggles.APBreaker and Toggles.APBreaker.Value and burstModeToggle.Value then
+				APBreaker.start(true, value)
+			end
+		end
+	})
+
+	apDepBox:AddSlider("APBreakerSpeed", {
+		Text = "Animation Speed",
+		Default = 10,
+		Min = 1,
+		Max = 100,
+		Suffix = "x",
+		Rounding = 0,
+		Callback = function(value)
+			APBreaker.updateSpeed(value)
+		end
+	})
+
+	apDepBox:AddSlider("APBreakerPPS", {
+		Text = "Pulses Per Second",
+		Default = 1000,
+		Min = 50,
+		Max = 5000,
+		Suffix = "pps",
+		Rounding = 0,
+		Callback = function(value)
+			APBreaker.updatePPS(value)
+		end
+	})
+
+	apDepBox:SetupDependencies({
+		{ apBreakerToggle, true }
+	})
+	-- ========== END AP BREAKER ==========
+
 	groupbox:AddToggle("M1Hold", {
 		Text = "M1 Hold",
 		Default = false,
@@ -709,7 +786,7 @@ function CombatTab.initCombatAssistance(groupbox)
 	})
 end
 
----Initialize debugging section.
+-- Initialize debugging section.
 ---@param groupbox table
 function CombatTab.initDebuggingSection(groupbox)
 	groupbox:AddToggle("BlockParryState", {
@@ -733,7 +810,7 @@ function CombatTab.initDebuggingSection(groupbox)
 	})
 end
 
----Initialize tab.
+-- Initialize tab.
 ---@param window table
 function CombatTab.init(window)
 	-- Create tab.
@@ -741,6 +818,7 @@ function CombatTab.init(window)
 
 	-- Initialize sections.
 	CombatTab.initAutoDefenseSection(tab:AddDynamicGroupbox("Auto Defense"))
+	
 	-- Create targeting section tab box.
 	local tabbox = tab:AddDynamicTabbox()
 	CombatTab.initCombatTargetingSection(tabbox:AddTab("Targeting"))
